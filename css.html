@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Azubi-HP</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <header>
+    <h1 id="header_title"><a href="#">AzubiHomepage</a></h1>
+    <nav>
+      <ul>
+        <li class="cat1"><a href="index.html">Home</a></li>
+        <li class="cat3"><a href="#">Agenda</a>
+          <ul>
+            <li><a href="index.html">HTML5</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li> <a href="jquery.html">JQuery</a></li>
+            <li> <a href="struktur.html">Struktur</a></li>
+            <li> <a href="aufbauhtml.html">Aufbau der Seite in HTML</a></li>
+            <li><a href="aufbaucss.html">Aufbau der Seite in CSS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="margin_box_top"></div>
+  <div id="page2" class="content">
+    <div class="container">
+      <div class="gliederung">
+        <ol>
+          <h1>Gliederung</h1>
+          <li id="a-1"><a href="g-1">CSS</a>
+          </li>
+          <li id="a-2"><a href="g-2">Syntax</a>
+          </li>
+          <li id="a-3"><a href="g-3">Einbinden</a>
+          </li>
+          <li id="a-4"><a href="g-4">Vererbung</a>
+          </li>
+          <li id="a-5"><a href="g-5">Farben</a>
+          </li>
+          <li id="a-6"><a href="g-6">Text</a>
+          </li>
+          <li id="a-7"><a href="g-7">Schrift</a>
+          </li>
+          <li id="a-8"><a href="g-8">Listen</a>
+          </li>
+          <li id="a-9"><a href="g-9">Hintergründe</a>
+          </li>
+          <li id="a-10"><a href="g-10">Das Box-Modell</a>
+          </li>
+          <li id="a-11"><a href="g-11">Ränder</a>
+          </li>
+          <li id="a-12"><a href="g-12">Margin</a>
+          </li>
+          <li id="a-13"><a href="g-13">Padding</a>
+          </li>
+          <li id="a-14"><a href="g-14">Höhe und Breite</a>
+          </li>
+          <li id="a-15"><a href="g-15">Box-sizing</a>
+          </li>
+          <li id="a-16"><a href="g-16">Schatten</a>
+          </li>
+          <li id="a-17"><a href="g-17">Display </a>
+          </li>
+          <li id="a-18"><a href="g-18">Flexbox</a>
+          </li>
+          <li id="a-19"><a href="g-19">Position</a>
+          </li>
+          <li id="a-20"><a href="g-20">Float</a>
+          </li>
+          <li id="a-21"><a href="g-21">Kombinatoren</a>
+          </li>
+          <li id="a-22"><a href="g-22">Pseudo-Klassen</a>
+          </li>
+          <li id="a-23"><a href="g-23">Pseudo-Elemente</a>
+          </li>
+          <li id="a-24"><a href="g-24">Transitions</a>
+          </li>
+          <li id="a-25"><a href="g-25">Media Queries</a>
+          </li>
+        </ol>
+      </div>
+      <section id="g-1">
+        <h1 class="sectionheading">CSS Cascading Style Sheets</h1>
+        <p>italienisch cascata, [stufenweiser] Wasserfall<br>-&gt; stufenweiser Aufbau</p>
+        <h3>HTML = Maurer</h3>
+        <h3>CSS = Maler</h3><img src="assets/img/gsapnocss.png"><img src="assets/img/gsapcss.png">
+      </section>
+      <section id="g-2">
+        <h1 class="sectionheading">Syntax</h1><img src="assets/img/csssyntax.png">
+      </section>
+      <section id="g-3">
+        <h1 class="sectionheading">Einbinden</h1>
+        <h3>Externes Stylesheet</h3>
+        <div class="codebox">
+          <pre class="brush: xml;">&lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+&lt;/head&gt;</pre>
+        </div>
+        <h3>Stylesheet im Head</h3>
+        <div class="codebox">
+          <pre class="brush: xml;">&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+           color: blue;
+           text-align: right;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;</pre>
+        </div>
+        <h3>Inline</h3>
+        <div class="codebox">
+          <pre class="brush: xml;">&lt;h1 style="color:blue;text-align:right"&gt;This is a heading.&lt;/h1&gt;</pre>
+        </div>
+      </section>
+      <section id="g-4">
+        <h1 class="sectionheading">Vererbung</h1>
+        <div class="codebox split2">
+          <pre class="brush: xml;">&lt;header class="red"&gt;
+&lt;h1&gt;Hallo&lt;/h1&gt;            
+&lt;/header&gt;</pre>
+          <pre class="brush: css;">header {
+    color: red;
+    text-align: center;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="color: red; text-align:center;"></div>
+          <h1 style="color: red;">Hallo</h1>
+        </div>
+      </section>
+      <section id="g-5">
+        <h1 class="sectionheading">Farben und Größen</h1>
+      </section>
+      <section id="g-6">
+        <h1 class="sectionheading">Text</h1>
+      </section>
+      <section id="g-7">
+        <h1 class="sectionheading">Schrift</h1>
+      </section>
+      <section id="g-8">
+        <h1 class="sectionheading">Listen</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hintergründe</h1>
+      </section>
+      
+      
+    </div>
+  </div>
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/highlighter/shCore.js"></script>
+  <script src="assets/js/highlighter/shAutoloader.js"></script>
+  <script src="assets/js/highlighter/shLegacy.js"></script>
+  <script src="assets/js/highlighter/shBrushCss.js"></script>
+  <script src="assets/js/highlighter/shBrushXml.js"></script>
+  <script src="assets/js/ScrollMagic.min.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/plugins/animation.gsap.min.js"></script>
+  <script src="assets/js/plugins/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/plugins/TextPlugin.min.js"></script>
+  <script src="assets/js/plugins/debug.addIndicators.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script>
+    SyntaxHighlighter.defaults['gutter'] = true;
+    SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.defaults['ruler'] = false;
+    SyntaxHighlighter.defaults['html-style']= true;
+    SyntaxHighlighter.all();
+  </script>
+</body>

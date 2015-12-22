@@ -1,0 +1,27 @@
+section#g-7
+    h1.sectionheading Klassen in HTML
+    p Klassen
+    ul
+        li können mehrfach verwendet werden
+
+    div.codebox
+        pre(class="brush: xml;")
+            &lt;h2 class="heading"&gt; Überschrift 2 &lt;/h1&gt;
+            &lt;h3 class="heading red"&gt; Überschrift 3 &lt;/h1&gt;
+            &lt;p class="red center"&gt; Text Block &lt;/h1&gt;
+    p Schreibweise in CSS
+    div.codebox
+        pre(class="brush: css;").
+            .heading {
+                background: pink;
+            }
+            .red {
+                color: red;
+            }
+            .center {
+                text-align: center;
+            }
+    div.examplebox
+        h2(style="background: pink") Überschrift 2
+        h3(style="background: pink; color: red;") Überschrift 3
+        p(style="text-align: center; color: red;") Text Block

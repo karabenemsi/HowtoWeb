@@ -1,0 +1,47 @@
+include ./modules/head.jade
+body
+    include ./modules/header.jade
+    div.content#page2
+            div.container
+                div.gliederung
+                  ol
+                      h1 Gliederung
+                      - var sectionlist = ["CSS","Syntax","Einbinden","Vererbung","Farben","Text","Schrift","Listen","Hintergründe","Das Box-Modell","Ränder","Margin","Padding","Höhe und Breite","Box-sizing","Schatten","Display ","Flexbox","Position","Float","Kombinatoren","Pseudo-Klassen","Pseudo-Elemente" , "Transitions" , "Media Queries" ]
+                      - var i = 1
+                      each section in sectionlist
+                        - var g = "g-";
+                        li(id="a-" + i)
+                          a(href=g + i)= section
+                          - i++ 
+
+                
+                include ./sections/2/2_001_css.jade
+                include ./sections/2/2_002_syntax.jade
+                include ./sections/2/2_003_einbinden.jade
+                include ./sections/2/2_004_vererbung.jade
+                include ./sections/2/2_005_farben.jade
+                include ./sections/2/2_006_text.jade
+                include ./sections/2/2_007_schrift.jade
+                include ./sections/2/2_008_listen.jade
+                include ./sections/2/2_009_hintergruende.jade
+                include ./sections/2/2_010_das-box-modell.jade
+                include ./sections/2/2_011_raender.jade
+                include ./sections/2/2_012_margin.jade
+                include ./sections/2/2_013_padding.jade
+                include ./sections/2/2_014_hoehe-und-breite.jade
+                include ./sections/2/2_015_box-sizing.jade
+                //- include ./sections/2/2_016_schatten.jade
+                //- include ./sections/2/2_017_display.jade
+                //- include ./sections/2/2_018_flexbox.jade
+                //- include ./sections/2/2_019_position.jade
+                //- include ./sections/2/2_020_float.jade
+                //- include ./sections/2/2_021_kombinatoren.jade
+                //- include ./sections/2/2_022_pseudo-klassen.jade
+                //- include ./sections/2/2_023_pseudo-elemente.jade
+                //- include ./sections/2/2_024_transitions.jade
+                //- include ./sections/2/2_025_media-query.jade
+
+                
+
+    include ./modules/footer.jade
+        

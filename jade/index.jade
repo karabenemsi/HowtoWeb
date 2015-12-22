@@ -1,0 +1,28 @@
+include ./modules/head.jade
+body
+    include ./modules/header.jade
+    div.content#page1
+            div.container
+                div.gliederung
+                    ol
+                        h1 Gliederung
+                        - var sectionlist = ["Intro", "HTML5", "Neue Dinge", "Verlorene Dinge", "DOM", "Ids in HTML", "Klassen in HTML"]
+                        - var i = 1
+                        each section in sectionlist
+                          - var g = "g-";
+                          li(id="a-" + i)
+                            a(href=g + i)= section
+                            - i++
+
+                
+                include ./sections/1/intro.jade
+                include ./sections/1/html5.jade
+                include ./sections/1/neuedinge.jade
+                include ./sections/1/verlorenedinge.jade
+                include ./sections/1/dom.jade
+                include ./sections/1/idsinhtml.jade
+                include ./sections/1/klasseninhtml.jade
+                
+
+    include ./modules/footer.jade
+        
