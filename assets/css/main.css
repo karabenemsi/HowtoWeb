@@ -1161,10 +1161,12 @@ strong {
 
 hr {
   border: solid #424242;
-  border-width: 1px 0 0;
+  border-width: 3px;
   clear: both;
-  margin: 10px 0 30px;
+  border-radius: 3px;
+  margin: 10px auto 30px;
   height: 0;
+  width: 90%;
 }
 
 .center {
@@ -1390,6 +1392,10 @@ section {
   position: relative;
 }
 
+img {
+  width: 100%;
+}
+
 .codebox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1399,14 +1405,21 @@ section {
   text-align: left;
   font-size: 1rem;
   line-height: 1.5;
+  border-radius: 5px;
 }
 
 .examplebox {
-  border: 1px solid black;
-  padding: 0 0.5em;
-  margin: 2em 0 2em 0;
   background: #fff;
-  background-font-size: 0.5rem;
+  margin: 2rem 0;
+  padding: 0.5rem;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+
+.examplebox > div {
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
 }
 
 .gliederung {
@@ -1436,7 +1449,6 @@ section {
 }
 
 .split2 > :first-child {
-  border-right: 0.5em solid #efefef;
   padding-top: 1.5em;
 }
 
@@ -1451,7 +1463,6 @@ section {
 }
 
 .split2 > :nth-child(2) {
-  border-right: 0.5em solid #efefef;
   padding-top: 1.5em;
 }
 
@@ -1480,28 +1491,16 @@ section {
   font-size: 1.5rem;
 }
 
+#page1 #g-1 li > ol {
+  font-size: 1rem;
+}
+
 #page1 #g-2 ul {
   font-size: 1rem;
   list-style: circle;
 }
 
 #page1 #g-2 svg {
-  position: absolute;
-  width: 30%;
-  top: 20%;
-  right: 20%;
-}
-
-#page2 #g-1 ol {
-  font-size: 1.5rem;
-}
-
-#page2 #g-2 ul {
-  font-size: 1rem;
-  list-style: circle;
-}
-
-#page2 #g-2 svg {
   position: absolute;
   width: 30%;
   top: 20%;

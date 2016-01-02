@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <title>Azubi-HP</title>
+  <title>How to Web</title>
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -15,9 +15,8 @@
             <li><a href="index.html">HTML5</a></li>
             <li><a href="css.html">CSS</a></li>
             <li> <a href="jquery.html">JQuery</a></li>
-            <li> <a href="struktur.html">Struktur</a></li>
-            <li> <a href="aufbauhtml.html">Aufbau der Seite in HTML</a></li>
-            <li><a href="aufbaucss.html">Aufbau der Seite in CSS</a></li>
+            <li> <a href="struktur.html">Grobe Struktur</a></li>
+            <li> <a href="aufbau.html">Detailierter Aufbau</a></li>
           </ul>
         </li>
       </ul>
@@ -29,55 +28,55 @@
       <div class="gliederung">
         <ol>
           <h1>Gliederung</h1>
-          <li id="a-1"><a href="g-1">CSS</a>
+          <li id="a-1"><a href="#g-1">CSS</a>
           </li>
-          <li id="a-2"><a href="g-2">Syntax</a>
+          <li id="a-2"><a href="#g-2">Syntax</a>
           </li>
-          <li id="a-3"><a href="g-3">Einbinden</a>
+          <li id="a-3"><a href="#g-3">Einbinden</a>
           </li>
-          <li id="a-4"><a href="g-4">Vererbung</a>
+          <li id="a-4"><a href="#g-4">Vererbung</a>
           </li>
-          <li id="a-5"><a href="g-5">Farben</a>
+          <li id="a-5"><a href="#g-5">Farben</a>
           </li>
-          <li id="a-6"><a href="g-6">Text</a>
+          <li id="a-6"><a href="#g-6">Text</a>
           </li>
-          <li id="a-7"><a href="g-7">Schrift</a>
+          <li id="a-7"><a href="#g-7">Schrift</a>
           </li>
-          <li id="a-8"><a href="g-8">Listen</a>
+          <li id="a-8"><a href="#g-8">Listen</a>
           </li>
-          <li id="a-9"><a href="g-9">Hintergründe</a>
+          <li id="a-9"><a href="#g-9">Hintergründe</a>
           </li>
-          <li id="a-10"><a href="g-10">Das Box-Modell</a>
+          <li id="a-10"><a href="#g-10">Das Box-Modell</a>
           </li>
-          <li id="a-11"><a href="g-11">Ränder</a>
+          <li id="a-11"><a href="#g-11">Ränder</a>
           </li>
-          <li id="a-12"><a href="g-12">Margin</a>
+          <li id="a-12"><a href="#g-12">Margin</a>
           </li>
-          <li id="a-13"><a href="g-13">Padding</a>
+          <li id="a-13"><a href="#g-13">Padding</a>
           </li>
-          <li id="a-14"><a href="g-14">Höhe und Breite</a>
+          <li id="a-14"><a href="#g-14">Höhe und Breite</a>
           </li>
-          <li id="a-15"><a href="g-15">Box-sizing</a>
+          <li id="a-15"><a href="#g-15">Box-sizing</a>
           </li>
-          <li id="a-16"><a href="g-16">Schatten</a>
+          <li id="a-16"><a href="#g-16">Schatten</a>
           </li>
-          <li id="a-17"><a href="g-17">Display </a>
+          <li id="a-17"><a href="#g-17">Display </a>
           </li>
-          <li id="a-18"><a href="g-18">Flexbox</a>
+          <li id="a-18"><a href="#g-18">Flexbox</a>
           </li>
-          <li id="a-19"><a href="g-19">Position</a>
+          <li id="a-19"><a href="#g-19">Position</a>
           </li>
-          <li id="a-20"><a href="g-20">Float</a>
+          <li id="a-20"><a href="#g-20">Float</a>
           </li>
-          <li id="a-21"><a href="g-21">Kombinatoren</a>
+          <li id="a-21"><a href="#g-21">Kombinatoren</a>
           </li>
-          <li id="a-22"><a href="g-22">Pseudo-Klassen</a>
+          <li id="a-22"><a href="#g-22">Pseudo-Klassen</a>
           </li>
-          <li id="a-23"><a href="g-23">Pseudo-Elemente</a>
+          <li id="a-23"><a href="#g-23">Pseudo-Elemente</a>
           </li>
-          <li id="a-24"><a href="g-24">Transitions</a>
+          <li id="a-24"><a href="#g-24">Transitions</a>
           </li>
-          <li id="a-25"><a href="g-25">Media Queries</a>
+          <li id="a-25"><a href="#g-25">Media Queries</a>
           </li>
         </ol>
       </div>
@@ -113,6 +112,10 @@
         <div class="codebox">
           <pre class="brush: xml;">&lt;h1 style="color:blue;text-align:right"&gt;This is a heading.&lt;/h1&gt;</pre>
         </div>
+        <h3>Import im Stylesheet</h3>
+        <div class="codebox">
+          <pre class="brush: css">@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700);</pre>
+        </div>
       </section>
       <section id="g-4">
         <h1 class="sectionheading">Vererbung</h1>
@@ -121,50 +124,304 @@
 &lt;h1&gt;Hallo&lt;/h1&gt;            
 &lt;/header&gt;</pre>
           <pre class="brush: css;">header {
-    color: red;
-    text-align: center;
+  color: red;
+  text-align: center;
 }</pre>
         </div>
         <div class="examplebox">
-          <div style="color: red; text-align:center;"></div>
-          <h1 style="color: red;">Hallo</h1>
+          <div style="color: red; text-align:center;width:100%;">
+            <h1 style="color: red; text-align:center;">Hallo</h1>
+          </div>
         </div>
       </section>
       <section id="g-5">
         <h1 class="sectionheading">Farben und Größen</h1>
+        <h3>Farben</h3>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  background: red;
+}
+#2 {
+  background: #56859;
+}
+#3 {
+  background: rgb(120,120,61);
+}
+#4 {
+  background: rgba(120,120,61,0.6);
+}
+#5 {
+  background: hsl(200,30%,40%);
+}
+#6 {
+  background: hsla(200,30%,40%,0.6);
+}</pre>
+        </div>
+        <div style="padding: 1rem;" class="examplebox">
+          <div style="border-radius: 50%;display: inline-block;background:red;height:3rem;width:3rem;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:#369541;height:3rem;width:3rem;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:rgb(120,120,61);height:3rem;width:3rem;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:rgba(120,120,61,0.6);height:3rem;width:3rem;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:hsl(200,30%,40%);height:3rem;width:3rem;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:hsla(200,30%,40%,0.6);height:3rem;width:3rem;"></div>
+        </div>
+        <h3>Größen</h3>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  height: 50px;
+  width: 50pt;
+}
+#2 {
+  height: 2cm;
+  width: 1in;
+}
+#3 {
+  height: 5vh;
+  width: 5vw;
+}
+#4 {
+  height: 5vmax;
+  width: 5vmin;
+}
+#5 {
+  font-size: 1.2rem;
+  height: 3em;
+  width: 3rem;
+}
+#6 {
+  height: 90%;
+  width: 30%;
+}</pre>
+        </div>
+        <div style="padding: 1rem;" class="examplebox">
+          <div style="border-radius: 50%;display: inline-block;background:red;height:50px;width:50pt;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:#369541;height:2cm;width:1in;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:rgb(120,120,61);height:5vh;width:5vw;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:rgba(120,120,61,0.6);height:5vmax;width:5vmin;"></div>
+          <div style="font-size: 1.2rem;border-radius: 50%;display: inline-block;background:hsl(200,30%,40%);height:3em;width:3rem;"></div>
+          <div style="border-radius: 50%;display: inline-block;background:hsla(200,30%,40%,0.6);height:90%;width:30%;"></div>
+        </div>
       </section>
       <section id="g-6">
         <h1 class="sectionheading">Text</h1>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  color: #985232
+  text-align: left; /* right | center | justify */
+  text-decoration: none; /* overline | line-through | underline */
+  text-transform: uppercase; /* lowercase | capitalize*/
+  text-indent: 50px;
+  letter-spacing: 5px;
+  line-height: 1.3;
+  direction: ltr;
+  word-spacing: 3px;
+}
+#2 {
+  text-align: justify
+  text-decoration: line-through;
+  letter-spacing: -2px;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <p style="color: #985232;text-align: left;text-decoration: none;text-transform: uppercase;text-indent: 50px;letter-spacing: 5px;line-height: 1.3;direction: ltr;word-spacing: 3px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur nostrum, inventore! Minus modi ipsam, maxime impedit necessitatibus non ab nisi incidunt magni! Cum quasi suscipit qui pariatur dicta temporibus.</p>
+          <p style="text-align: justify;text-decoration:line-through;line-height: 1.3;letter-spacing: -2px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur nostrum, inventore! Minus modi ipsam, maxime impedit necessitatibus non ab nisi incidunt magni! Cum quasi suscipit qui pariatur dicta temporibus.</p>
+        </div>
       </section>
       <section id="g-7">
         <h1 class="sectionheading">Schrift</h1>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  font-family: 'Times New Roman', Times , serif;
+  font-family: 'Fira Sans', sans serif;
+  font-style: nromal; /* italic */
+  font-size: 2rem;
+  font-weight: 700; /* 100 | 400 | 300 | bold | normal | thin */ 
+}
+#2 {
+
+}</pre>
+        </div>
+        <div class="examplebox">
+          <p style="font-size: 2rem; font-weight: 700;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, autem?</p>
+        </div>
       </section>
       <section id="g-8">
         <h1 class="sectionheading">Listen</h1>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;ol&gt;
+  &lt;li&gt; Erdbeeren &lt;/li&gt;
+  &lt;li&gt; Bananen &lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+  &lt;li&gt; Schokolade &lt;/li&gt;
+  &lt;li&gt; Gummibärchen &lt;/li&gt;
+&lt;/ul&gt;</pre>
+          <pre class="brush: css">ol {
+  list-style-type: decimal; /* lower-alpha | numeric | armenian | georgian | ... */
+  list-style-image: url("list.png");
+  list-style-position: outside; /* inside */
+}
+ul {
+  list-style: square inside;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <ol style="list-style: decimal outside;">
+            <li>Erdbeeren</li>
+            <li>Bananen</li>
+          </ol>
+          <ul style="list-style: square inside;">
+            <li>Schokolade</li>
+            <li>Gummibärchen</li>
+          </ul>
+        </div>
       </section>
       <section id="g-9">
         <h1 class="sectionheading">Hintergründe</h1>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  background-color: #635245;
+}
+#2 {
+  background-image: url('csssyntax.png');
+  background-repeat: no-repeat;
+  background-position: left top;                        
+}
+#3 {
+  background: url('csssyntax.png') no-repeat center center;
+  background-size: cover; /* contain | 50px 30px */
+  
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="margin:5px;background: #635245;"></div>
+          <div style="margin:5px;height:10rem;width:10rem;background: url('assets/img/csssyntax.png');"></div>
+          <div style="margin:5px;height:10rem;width:10rem;background:  url('assets/img/csssyntax.png') no-repeat left center;background-size: cover;"></div>
+        </div>
       </section>
-      <section id="g-9">
-        <h1 class="sectionheading">Hintergründe</h1>
+      <section id="g-10">
+        <h1 class="sectionheading">Ränder</h1><a href="http://codepen.io/carolineartz/full/ogVXZj/" target="_blank">Codepen by carolineartz</a><img style="display: block; margin: 0 auto 2rem; width: auto;" src="assets/img/boxmodell.png" alt="Boxmodell">
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  width: 120px;
+  height: 60px;
+  padding: 10px;
+  border: 10px dashed navy;
+  margin: 8px;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="box-sizing: content-box;width:120px; height: 60px; padding: 10px; border: 10px dashed navy; margin: 8px; background: #df6512"></div>
+        </div>
       </section>
-      <section id="g-9">
-        <h1 class="sectionheading">Hintergründe</h1>
+      <section id="g-11">
+        <h1 class="sectionheading">Ränder</h1>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  border-style: solid; /* dotted | dashed | double | groove | none */
+}
+#2 {
+  border-style: solid dotted dashed solid;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="border: 10px solid #3252de"></div>
+          <div style="border-width: 10px;border-style:solid dotted dashed solid;border-color:#12de96;"></div>
+        </div>
+        <hr>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  border-width: 20px;
+}
+</pre>
+        </div>
+        <div class="examplebox">
+          <div style="border: 20px solid #3252de"></div>
+        </div>
+        <hr>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  border-color: #de54aa;
+}
+</pre>
+        </div>
+        <div class="examplebox">
+          <div style="border: 10px solid #de54aa"></div>
+        </div>
+        <hr>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  border: 10px solid #de54aa;
+  border-radius: 30px;
+}
+</pre>
+        </div>
+        <div class="examplebox">
+          <div style="border: 10px solid #de54aa; border-radius: 30px"></div>
+        </div>
       </section>
-      <section id="g-9">
-        <h1 class="sectionheading">Hintergründe</h1>
+      <section id="g-12">
+        <h1 class="sectionheading">Margin</h1>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;div id="1"&gt;
+  &lt;div id="2"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          <pre class="brush: css">#1 {
+  background: #3252de;
+}
+#2 {
+  background: #de54aa;
+  margin: 5px 3px 10px 0;                
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="background: #3252de;">
+            <div style="background: #de54aa; margin: 5px 3px 10px 0;z-index: 10;height: calc(100% - 15px);width: auto;"></div>
+          </div>
+        </div>
       </section>
-      <section id="g-9">
-        <h1 class="sectionheading">Hintergründe</h1>
+      <section id="g-13">
+        <h1 class="sectionheading">Padding</h1>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;div id="1"&gt;
+  &lt;div id="2"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          <pre class="brush: css">#1 {
+  background: #3252de;
+  padding: 30px;
+  border: 5px solid #12de96
+}
+#2 {
+  background: #de54aa;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="background: #3252de; padding:30px;border: 5px solid #12de96;">
+            <div style="background: #de54aa; z-index: 10;height:5rem;"></div>
+          </div>
+        </div>
       </section>
-      <section id="g-9">
-        <h1 class="sectionheading">Hintergründe</h1>
+      <section id="g-14">
+        <h1 class="sectionheading">Height and Width</h1>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;div id="1"&gt;
+  &lt;div id="2"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          <pre class="brush: css">#1 {
+  background: #3252de;
+  padding: 30px;
+  border: 5px solid #12de96
+}
+#2 {
+  background: #de54aa;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="background: #3252de; padding:30px;border: 5px solid #12de96;">
+            <div style="background: #de54aa; z-index: 10;height:5rem;"></div>
+          </div>
+        </div>
       </section>
-      <section id="g-9">
-        <h1 class="sectionheading">Hintergründe</h1>
-      </section>
-      
-      
     </div>
   </div>
   <script src="assets/js/jquery-2.1.4.min.js"></script>

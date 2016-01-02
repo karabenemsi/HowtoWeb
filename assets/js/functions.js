@@ -42,7 +42,8 @@ $(document).on("click", "a[href^=#]", function(e) {
     sceneArray[i - 1] =  new ScrollMagic.Scene({ triggerElement: '#g-' + i })
       .setClassToggle('#a-' + i, 'active')
       .setTween(TweenMax.to('#header_title>a', 0.2, {text:$('#g-' + i + ' .sectionheading').html(), ease:Linear.easeNone}))
-      .addTo(controller);
+      .addTo(controller)
+      .addIndicators();
       i++;
 }
 

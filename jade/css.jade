@@ -9,39 +9,337 @@ body
                       - var sectionlist = ["CSS","Syntax","Einbinden","Vererbung","Farben","Text","Schrift","Listen","Hintergründe","Das Box-Modell","Ränder","Margin","Padding","Höhe und Breite","Box-sizing","Schatten","Display ","Flexbox","Position","Float","Kombinatoren","Pseudo-Klassen","Pseudo-Elemente" , "Transitions" , "Media Queries" ]
                       - var i = 1
                       each section in sectionlist
-                        - var g = "g-";
+                        - var g = "#g-";
                         li(id="a-" + i)
                           a(href=g + i)= section
                           - i++ 
 
-                
-                include ./sections/2/2_001_css.jade
-                include ./sections/2/2_002_syntax.jade
-                include ./sections/2/2_003_einbinden.jade
-                include ./sections/2/2_004_vererbung.jade
-                include ./sections/2/2_005_farben.jade
-                include ./sections/2/2_006_text.jade
-                include ./sections/2/2_007_schrift.jade
-                include ./sections/2/2_008_listen.jade
-                include ./sections/2/2_009_hintergruende.jade
-                include ./sections/2/2_010_das-box-modell.jade
-                include ./sections/2/2_011_raender.jade
-                include ./sections/2/2_012_margin.jade
-                include ./sections/2/2_013_padding.jade
-                include ./sections/2/2_014_hoehe-und-breite.jade
-                include ./sections/2/2_015_box-sizing.jade
-                //- include ./sections/2/2_016_schatten.jade
-                //- include ./sections/2/2_017_display.jade
-                //- include ./sections/2/2_018_flexbox.jade
-                //- include ./sections/2/2_019_position.jade
-                //- include ./sections/2/2_020_float.jade
-                //- include ./sections/2/2_021_kombinatoren.jade
-                //- include ./sections/2/2_022_pseudo-klassen.jade
-                //- include ./sections/2/2_023_pseudo-elemente.jade
-                //- include ./sections/2/2_024_transitions.jade
-                //- include ./sections/2/2_025_media-query.jade
+                section#g-1
+                    h1.sectionheading CSS Cascading Style Sheets
+                    p italienisch cascata, [stufenweiser] Wasserfall
+                        br
+                        | -&gt; stufenweiser Aufbau
+                        
+                    h3 HTML = Maurer
+                    h3 CSS = Maler
+                    img(src="assets/img/gsapnocss.png")
+                    img(src="assets/img/gsapcss.png")
+                section#g-2
+                    h1.sectionheading Syntax
+                    img(src="assets/img/csssyntax.png")
+                section#g-3
+                    h1.sectionheading Einbinden
+                    h3 Externes Stylesheet
+                    div.codebox
+                        pre(class="brush: xml;").
+                            &lt;head&gt;
+                                &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+                            &lt;/head&gt;
+                    h3 Stylesheet im Head
+                    div.codebox
+                        pre(class="brush: xml;").
+                            &lt;head&gt;
+                                &lt;style&gt;
+                                    h1 {
+                                       color: blue;
+                                       text-align: right;
+                                    }
+                                &lt;/style&gt;
+                            &lt;/head&gt;
+                    h3 Inline
+                    div.codebox
+                        pre(class="brush: xml;").
+                             &lt;h1 style="color:blue;text-align:right"&gt;This is a heading.&lt;/h1&gt;
+                    h3 Import im Stylesheet
+                    div.codebox
+                      pre(class="brush: css").
+                        @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700);
+                section#g-4
+                    h1.sectionheading Vererbung
+                    div.codebox.split2
+                        pre(class="brush: xml;").
+                            &lt;header class="red"&gt;
+                            &lt;h1&gt;Hallo&lt;/h1&gt;            
+                            &lt;/header&gt;
+                        pre(class="brush: css;").
+                            header {
+                              color: red;
+                              text-align: center;
+                            }
+                    div.examplebox
+                        div(style="color: red; text-align:center;width:100%;")
+                          h1(style="color: red; text-align:center;") Hallo
+                section#g-5
+                    h1.sectionheading Farben und Größen
+                    h3 Farben
+                    div.codebox
+                      pre(class="brush: css").
+                        #1 {
+                          background: red;
+                        }
+                        #2 {
+                          background: #56859;
+                        }
+                        #3 {
+                          background: rgb(120,120,61);
+                        }
+                        #4 {
+                          background: rgba(120,120,61,0.6);
+                        }
+                        #5 {
+                          background: hsl(200,30%,40%);
+                        }
+                        #6 {
+                          background: hsla(200,30%,40%,0.6);
+                        }
+                    div.examplebox(style="padding: 1rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:red;height:3rem;width:3rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:#369541;height:3rem;width:3rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:rgb(120,120,61);height:3rem;width:3rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:rgba(120,120,61,0.6);height:3rem;width:3rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:hsl(200,30%,40%);height:3rem;width:3rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:hsla(200,30%,40%,0.6);height:3rem;width:3rem;")
+                    h3 Größen
+                    div.codebox
+                      pre(class="brush: css").
+                        #1 {
+                          height: 50px;
+                          width: 50pt;
+                        }
+                        #2 {
+                          height: 2cm;
+                          width: 1in;
+                        }
+                        #3 {
+                          height: 5vh;
+                          width: 5vw;
+                        }
+                        #4 {
+                          height: 5vmax;
+                          width: 5vmin;
+                        }
+                        #5 {
+                          font-size: 1.2rem;
+                          height: 3em;
+                          width: 3rem;
+                        }
+                        #6 {
+                          height: 90%;
+                          width: 30%;
+                        }
+                    div.examplebox(style="padding: 1rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:red;height:50px;width:50pt;")
+                      div(style="border-radius: 50%;display: inline-block;background:#369541;height:2cm;width:1in;")
+                      div(style="border-radius: 50%;display: inline-block;background:rgb(120,120,61);height:5vh;width:5vw;")
+                      div(style="border-radius: 50%;display: inline-block;background:rgba(120,120,61,0.6);height:5vmax;width:5vmin;")
+                      div(style="font-size: 1.2rem;border-radius: 50%;display: inline-block;background:hsl(200,30%,40%);height:3em;width:3rem;")
+                      div(style="border-radius: 50%;display: inline-block;background:hsla(200,30%,40%,0.6);height:90%;width:30%;")
+                    
+                section#g-6
+                    h1.sectionheading Text
+                    div.codebox
+                      pre(class="brush: css").
+                        #1 {
+                          color: #985232
+                          text-align: left; /* right | center | justify */
+                          text-decoration: none; /* overline | line-through | underline */
+                          text-transform: uppercase; /* lowercase | capitalize*/
+                          text-indent: 50px;
+                          letter-spacing: 5px;
+                          line-height: 1.3;
+                          direction: ltr;
+                          word-spacing: 3px;
+                        }
+                        #2 {
+                          text-align: justify
+                          text-decoration: line-through;
+                          letter-spacing: -2px;
+                        }
+                    div.examplebox
+                      p(style="color: #985232;text-align: left;text-decoration: none;text-transform: uppercase;text-indent: 50px;letter-spacing: 5px;line-height: 1.3;direction: ltr;word-spacing: 3px;")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur nostrum, inventore! Minus modi ipsam, maxime impedit necessitatibus non ab nisi incidunt magni! Cum quasi suscipit qui pariatur dicta temporibus.
+                      p(style="text-align: justify;text-decoration:line-through;line-height: 1.3;letter-spacing: -2px;")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam pariatur nostrum, inventore! Minus modi ipsam, maxime impedit necessitatibus non ab nisi incidunt magni! Cum quasi suscipit qui pariatur dicta temporibus.
+                section#g-7
+                    h1.sectionheading Schrift
+                    div.codebox
+                      pre(class="brush: css").
+                        #1 {
+                          font-family: 'Times New Roman', Times , serif;
+                          font-family: 'Fira Sans', sans serif;
+                          font-style: nromal; /* italic */
+                          font-size: 2rem;
+                          font-weight: 700; /* 100 | 400 | 300 | bold | normal | thin */ 
+                        }
+                        #2 {
+                        
+                        }
+                    div.examplebox
+                      p(style="font-size: 2rem; font-weight: 700;")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, autem?
+                section#g-8
+                    h1.sectionheading Listen
+                    div.codebox.split2
+                      pre(class="brush: xml").
+                        &lt;ol&gt;
+                          &lt;li&gt; Erdbeeren &lt;/li&gt;
+                          &lt;li&gt; Bananen &lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;ul&gt;
+                          &lt;li&gt; Schokolade &lt;/li&gt;
+                          &lt;li&gt; Gummibärchen &lt;/li&gt;
+                        &lt;/ul&gt;
+                      pre(class="brush: css").
+                        ol {
+                          list-style-type: decimal; /* lower-alpha | numeric | armenian | georgian | ... */
+                          list-style-image: url("list.png");
+                          list-style-position: outside; /* inside */
+                        }
+                        ul {
+                          list-style: square inside;
+                        }
+                    div.examplebox
+                      ol(style="list-style: decimal outside;")
+                        li Erdbeeren
+                        li Bananen
+                      ul(style="list-style: square inside;")
+                        li Schokolade
+                        li Gummibärchen
+                section#g-9
+                  h1.sectionheading Hintergründe
+                  div.codebox
+                    pre(class="brush: css").
+                      #1 {
+                        background-color: #635245;
+                      }
+                      #2 {
+                        background-image: url('csssyntax.png');
+                        background-repeat: no-repeat;
+                        background-position: left top;                        
+                      }
+                      #3 {
+                        background: url('csssyntax.png') no-repeat center center;
+                        background-size: cover; /* contain | 50px 30px */
+                        
+                      }
+                  div.examplebox
+                    div(style="margin:5px;background: #635245;")
+                    div(style="margin:5px;height:10rem;width:10rem;background: url('assets/img/csssyntax.png');")
+                    div(style="margin:5px;height:10rem;width:10rem;background:  url('assets/img/csssyntax.png') no-repeat left center;background-size: cover;")
+                section#g-10
+                  h1.sectionheading Ränder
+                  a(href="http://codepen.io/carolineartz/full/ogVXZj/", target="_blank") Codepen by carolineartz
+                  img(style="display: block; margin: 0 auto 2rem; width: auto;", src="assets/img/boxmodell.png", alt="Boxmodell")
+                  div.codebox
+                    pre(class="brush: css").
+                      #1 {
+                        width: 120px;
+                        height: 60px;
+                        padding: 10px;
+                        border: 10px dashed navy;
+                        margin: 8px;
+                      }
+                  div.examplebox
+                    div(style="box-sizing: content-box;width:120px; height: 60px; padding: 10px; border: 10px dashed navy; margin: 8px; background: #df6512")
+                section#g-11
+                  h1.sectionheading Ränder
+                  div.codebox
+                    pre(class="brush: css").
+                      #1 {
+                        border-style: solid; /* dotted | dashed | double | groove | none */
+                      }
+                      #2 {
+                        border-style: solid dotted dashed solid;
+                      }
+                  div.examplebox
+                    div(style="border: 10px solid #3252de")
+                    div(style="border-width: 10px;border-style:solid dotted dashed solid;border-color:#12de96;")
+                  hr
+                  div.codebox
+                    pre(class="brush: css").
+                      #1 {
+                        border-width: 20px;
+                      }
 
+                  div.examplebox
+                    div(style="border: 20px solid #3252de")
+                  hr
+                  div.codebox
+                    pre(class="brush: css").
+                      #1 {
+                        border-color: #de54aa;
+                      }
+
+                  div.examplebox
+                    div(style="border: 10px solid #de54aa")
+                    
+                  hr
+                  div.codebox
+                    pre(class="brush: css").
+                      #1 {
+                        border: 10px solid #de54aa;
+                        border-radius: 30px;
+                      }
+
+                  div.examplebox
+                    div(style="border: 10px solid #de54aa; border-radius: 30px")
+                    
+                section#g-12
+                  h1.sectionheading Margin
+                  div.codebox.split2
+                    pre(class="brush: xml").
+                      &lt;div id="1"&gt;
+                        &lt;div id="2"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                    pre(class="brush: css").
+                      #1 {
+                        background: #3252de;
+                      }
+                      #2 {
+                        background: #de54aa;
+                        margin: 5px 3px 10px 0;                
+                      }
+                  div.examplebox
+                    div(style="background: #3252de;")
+                      div(style="background: #de54aa; margin: 5px 3px 10px 0;z-index: 10;height: calc(100% - 15px);width: auto;")
+                section#g-13
+                  h1.sectionheading Padding
+                  div.codebox.split2
+                    pre(class="brush: xml").
+                      &lt;div id="1"&gt;
+                        &lt;div id="2"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                    pre(class="brush: css").
+                      #1 {
+                        background: #3252de;
+                        padding: 30px;
+                        border: 5px solid #12de96
+                      }
+                      #2 {
+                        background: #de54aa;
+                      }
+                  div.examplebox
+                    div(style="background: #3252de; padding:30px;border: 5px solid #12de96;")
+                      div(style="background: #de54aa; z-index: 10;height:5rem;")
+                section#g-14
+                  h1.sectionheading Height and Width
+                  div.codebox.split2
+                    pre(class="brush: xml").
+                      &lt;div id="1"&gt;
+                        &lt;div id="2"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                    pre(class="brush: css").
+                      #1 {
+                        background: #3252de;
+                        padding: 30px;
+                        border: 5px solid #12de96
+                      }
+                      #2 {
+                        background: #de54aa;
+                      }
+                  div.examplebox
+                    div(style="background: #3252de; padding:30px;border: 5px solid #12de96;")
+                      div(style="background: #de54aa; z-index: 10;height:5rem;")
                 
+
+                      
 
     include ./modules/footer.jade
         
