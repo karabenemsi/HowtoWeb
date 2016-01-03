@@ -1179,20 +1179,20 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  height: 1.5em;
+  padding: 0 0.7em;
   color: #555;
   text-align: center;
-  font-size: 11px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 38px;
+  line-height: 1.5em;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
+  border-radius: 0.2em;
+  border: 0.01em solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -1505,4 +1505,548 @@ img {
   width: 30%;
   top: 20%;
   right: 20%;
+}
+
+#welcome {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+#welcome h1 {
+  text-align: center;
+  z-index: 1002;
+  position: relative;
+  margin: 20vh auto;
+  font-size: 10em;
+}
+
+#welcome .button {
+  z-index: 1002;
+  background: rgba(250, 250, 250, 0.7);
+}
+
+#welcome #w_start {
+  font-size: 3rem;
+  position: relative;
+  margin: 0 -webkit-calc((100vw - 270px) * 0.5);
+  margin: 0 calc((100vw - 270px) * 0.5);
+  width: 270px;
+}
+
+#welcome #startanimation,
+#welcome #pauseanimation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.3;
+}
+
+#welcome #startanimation:hover,
+#welcome #pauseanimation:hover {
+  opacity: 1;
+}
+
+#welcome #pauseanimation {
+  left: 5em;
+}
+
+#welcome svg {
+  position: fixed;
+  z-index: 1001;
+  height: 100vh;
+  top: 0;
+}
+
+.fille37314 {
+  fill: #E37314;
+}
+
+.op34 {
+  opacity: 0.34;
+}
+
+.color1 {
+  fill: #E77914;
+}
+
+.color2 {
+  fill: #F3981C;
+}
+
+.color3 {
+  fill: #EF8D1A;
+}
+
+.color4 {
+  fill: #F5A321;
+}
+
+.color5 {
+  fill: #EF921C;
+}
+
+.color6 {
+  fill: #F7C875;
+}
+
+.color7 {
+  fill: #EEA13D;
+}
+
+.color8 {
+  fill: #F1B25F;
+}
+
+.color9 {
+  fill: #E27914;
+}
+
+.color10 {
+  fill: #EB8218;
+}
+
+.color11 {
+  fill: #F7A621;
+}
+
+.color12 {
+  fill: #FBC92F;
+}
+
+.color13 {
+  fill: #F9BE2B;
+}
+
+.color14 {
+  fill: #F1921C;
+}
+
+.color15 {
+  fill: #E06C12;
+}
+
+.color16 {
+  fill: #E17619;
+}
+
+.color17 {
+  fill: #E27917;
+}
+
+.color18 {
+  fill: #F1B570;
+}
+
+.color19 {
+  fill: #E27A19;
+}
+
+.color20 {
+  fill: #EA8E2E;
+}
+
+.color21 {
+  fill: #FCF1C4;
+}
+
+.color22 {
+  fill: #FBDA8B;
+}
+
+.color23 {
+  fill: #FCEFB9;
+}
+
+.color24 {
+  fill: #FCD965;
+}
+
+.color25 {
+  fill: #FCDC41;
+}
+
+.color26 {
+  fill: #FCECBB;
+}
+
+.color27 {
+  fill: #FDEDC6;
+}
+
+.color28 {
+  fill: #F8DBA6;
+}
+
+.color29 {
+  fill: #EF9B24;
+}
+
+.color30 {
+  fill: #E88017;
+}
+
+.color31 {
+  fill: #F2A021;
+}
+
+.color32 {
+  fill: #FCD332;
+}
+
+.color33 {
+  fill: #FBC52E;
+}
+
+.color34 {
+  fill: #F3961D;
+}
+
+.color35 {
+  fill: #E8882C;
+}
+
+.color36 {
+  fill: #F3C077;
+}
+
+.color37 {
+  fill: #FCEFCA;
+}
+
+.color38 {
+  fill: #FBEBCB;
+}
+
+.color39 {
+  fill: #FBDCB4;
+}
+
+.color40 {
+  fill: #F09D47;
+}
+
+.color41 {
+  fill: #FCF1C0;
+}
+
+.color42 {
+  fill: #FBF3D0;
+}
+
+.color43 {
+  fill: #FDF3C4;
+}
+
+.color44 {
+  fill: #FFF1A3;
+}
+
+.color45 {
+  fill: #FCDB3D;
+}
+
+.color46 {
+  fill: #FBD739;
+}
+
+.color47 {
+  fill: #FDE99F;
+}
+
+.color48 {
+  fill: #FBD769;
+}
+
+.color49 {
+  fill: #F6BE4C;
+}
+
+.color50 {
+  fill: #ED912C;
+}
+
+.color51 {
+  fill: #EB8417;
+}
+
+.color52 {
+  fill: #F8B427;
+}
+
+.color53 {
+  fill: #F8AC23;
+}
+
+.color54 {
+  fill: #F6A421;
+}
+
+.color55 {
+  fill: #EE992C;
+}
+
+.color56 {
+  fill: #F9C965;
+}
+
+.color57 {
+  fill: #FCEAC2;
+}
+
+.color58 {
+  fill: #FBE5B4;
+}
+
+.color59 {
+  fill: #F6C585;
+}
+
+.color60 {
+  fill: #EB8017;
+}
+
+.color61 {
+  fill: #FCE649;
+}
+
+.color62 {
+  fill: #FBE579;
+}
+
+.color63 {
+  fill: #FDF7BE;
+}
+
+.color64 {
+  fill: #FCF4AF;
+}
+
+.color65 {
+  fill: #FACC50;
+}
+
+.color66 {
+  fill: #FBC72D;
+}
+
+.color67 {
+  fill: #FBC32D;
+}
+
+.color68 {
+  fill: #FCDC6D;
+}
+
+.color69 {
+  fill: #FDF7D6;
+}
+
+.color70 {
+  fill: #FBE2AA;
+}
+
+.color71 {
+  fill: #FBDC97;
+}
+
+.color72 {
+  fill: #FAC858;
+}
+
+.color73 {
+  fill: #FAC83F;
+}
+
+.color74 {
+  fill: #F9BE2B;
+}
+
+.color75 {
+  fill: #FCE178;
+}
+
+.color76 {
+  fill: #FBDC7D;
+}
+
+.color77 {
+  fill: #FCD43D;
+}
+
+.color78 {
+  fill: #FCDC78;
+}
+
+.color79 {
+  fill: #F9AC23;
+}
+
+.color80 {
+  fill: #EE8519;
+}
+
+.color81 {
+  fill: #FCE643;
+}
+
+.color82 {
+  fill: #FCE43E;
+}
+
+.color83 {
+  fill: #FDEF80;
+}
+
+.color84 {
+  fill: #FCE057;
+}
+
+.color85 {
+  fill: #FCC43C;
+}
+
+.color86 {
+  fill: #F9B527;
+}
+
+.color87 {
+  fill: #FBC32E;
+}
+
+.color88 {
+  fill: #FCD86C;
+}
+
+.color89 {
+  fill: #FCF2C6;
+}
+
+.color90 {
+  fill: #FCE195;
+}
+
+.color91 {
+  fill: #FCDD8C;
+}
+
+.color92 {
+  fill: #FACF5D;
+}
+
+.color93 {
+  fill: #FBD444;
+}
+
+.color94 {
+  fill: #FCD936;
+}
+
+.color95 {
+  fill: #FCE660;
+}
+
+.color96 {
+  fill: #FAC835;
+}
+
+.color97 {
+  fill: #FBC52E;
+}
+
+.color98 {
+  fill: #FAB828;
+}
+
+.color99 {
+  fill: #F7A622;
+}
+
+.color100 {
+  fill: #EC8218;
+}
+
+.color101 {
+  fill: #FCDF39;
+}
+
+.color102 {
+  fill: #FCE039;
+}
+
+.color103 {
+  fill: #FDDA35;
+}
+
+.color104 {
+  fill: #FBCD31;
+}
+
+.color105 {
+  fill: #F8A621;
+}
+
+.color106 {
+  fill: #F9B226;
+}
+
+.color107 {
+  fill: #FABC2A;
+}
+
+.color108 {
+  fill: #F9B22E;
+}
+
+.color109 {
+  fill: #F6AC35;
+}
+
+.color110 {
+  fill: #FACD59;
+}
+
+.color111 {
+  fill: #F7AD2F;
+}
+
+.color112 {
+  fill: #F9B227;
+}
+
+.color113 {
+  fill: #FBC62E;
+}
+
+.color114 {
+  fill: #FCCF32;
+}
+
+.color115 {
+  fill: #FBBE2B;
+}
+
+.color116 {
+  fill: #F9B326;
+}
+
+.color117 {
+  fill: #F59D1E;
+}
+
+.color118 {
+  fill: #F59A1D;
+}
+
+.color119 {
+  fill: #EF8718;
+}
+
+.color120 {
+  fill: #EC8218;
 }
