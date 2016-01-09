@@ -403,24 +403,152 @@ ul {
       </section>
       <section id="g-14">
         <h1 class="sectionheading">Height and Width</h1>
-        <div class="codebox split2">
-          <pre class="brush: xml">&lt;div id="1"&gt;
-  &lt;div id="2"&gt;&lt;/div&gt;
-&lt;/div&gt;</pre>
+        <div class="codebox">
           <pre class="brush: css">#1 {
-  background: #3252de;
-  padding: 30px;
-  border: 5px solid #12de96
-}
-#2 {
   background: #de54aa;
+  border: 5px solid #3252de
+  width: 300px;
+  height: 150px;
+}
+
+#2 {
+  background: #54aade;
+  border: 5px solid #249832;
+  max-width: 300px;
+  width: 50%;
+  height: 10rem;
+  max-height: 150px
 }</pre>
         </div>
         <div class="examplebox">
-          <div style="background: #3252de; padding:30px;border: 5px solid #12de96;">
-            <div style="background: #de54aa; z-index: 10;height:5rem;"></div>
+          <div style="width: 300px;height:150px;background:#de54aa;padding:0;border:5px solid #3252de;"></div>
+          <div id="js_ex_1" style="width:50%;height:10rem;background:#54aade;padding:0;border:5px solid #249832;"></div>
+        </div>
+      </section>
+      <section id="g-15">
+        <h1 class="sectionheading">Box-sizing</h1>
+        <div class="codebox split2">
+          <pre class="brush: xml"><div id="1"></div>
+<div id="2"></div></pre>
+          <pre class="brush: css">#1 {
+  width: 300px;
+  height: 150px;
+  border: 5px solid #249832;
+}
+#2 {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  border: 5px solid #249832;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="width:300px;height:150px;border:5px solid #249832;"></div>
+          <div style="width:300px;height:150px;padding:20px;border: 5px solid #54aade;"></div>
+        </div>
+        <div class="space"></div>
+        <div class="codebox split2">
+          <pre class="brush: xml"><div id="1"></div>
+<div id="2"></div></pre>
+          <pre class="brush: css">div {
+  box-sizing: border-box;
+}
+#1 {
+  width: 300px;
+  height: 150px;
+  border: 5px solid #249832;
+}
+#2 {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  border: 5px solid #249832;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="width:300px;height:150px;border:5px solid #249832;box-sizing:border-box;"></div>
+          <div style="width:300px;height:150px;padding:20px;border: 5px solid #54aade;box-sizing:border-box;"></div>
+        </div>
+      </section>
+      <section id="g-16">
+        <h1 class="sectionheading">Schatten</h1>
+        <div style="border-radius: 10px;margin: 0 1rem;display: inline-block;box-shadow: 0 0 10px rgba(30,30,30,0.6);height: 15rem;width: 10rem;">
+          <h2 style="border-radius: 10px 10px 0 0;width:10rem;margin:0;text-align: center; font-size: 6rem; padding: 2rem 0; background: #2D7998;color: white;text-shadow: 0 0 20px rgba(0,0,0,0.6); box-shadow: inset 0 0 40px rgba(250,250,250,0.1)">18</h2>
+          <p style="width: 100%; height: 5rem;text-align: center; font-size: 1rem; padding: 1.5rem 0;">18.Januar 2016</p>
+        </div>
+        <div style="border-radius: 10px;margin: 0 1rem;display: inline-block;box-shadow: 0 0 10px rgba(30,30,30,0.6);height: 15rem;width: 10rem;">
+          <h2 style="border-radius: 10px 10px 0 0;width:10rem;margin:0;text-align: center; font-size: 6rem; padding: 2rem 0; background: #CCC314;color: white;text-shadow: 0 0 20px rgba(0,0,0,0.6); box-shadow: inset 0 0 40px rgba(250,250,250,0.1)">19</h2>
+          <p style="width: 100%; height: 5rem;text-align: center; font-size: 1rem; padding: 1.5rem 0;">19.Januar 2016</p>
+        </div>
+        <div style="border-radius: 10px;margin: 0 1rem;display: inline-block;box-shadow: 0 0 10px rgba(30,30,30,0.6);height: 15rem;width: 10rem;">
+          <h2 style="border-radius: 10px 10px 0 0;width:10rem;margin:0;text-align: center; font-size: 6rem; padding: 2rem 0; background: #FF1943;color: white;text-shadow: 0 0 20px rgba(0,0,0,0.6); box-shadow: inset 0 0 40px rgba(250,250,250,0.1)">20</h2>
+          <p style="width: 100%; height: 5rem;text-align: center; font-size: 1rem; padding: 1.5rem 0;">20.Januar 2016</p>
+        </div>
+        <div class="examplebox">
+          <p style="font-size: 2.5rem;text-shadow: 7px 7px;">Hello Everybody</p>
+          <p style="font-size: 2.5rem;text-shadow: 7px 7px rgb(30,150,132);">Hello Everybody</p>
+          <p style="font-size: 2.5rem;text-shadow: 7px 7px 7px rgb(30,150,132);">Hello Everybody</p>
+        </div>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  text-shadow: 7px 7px;
+}
+#2 {  
+  text-shadow: 7px 7px rgba(30,150,132);
+}
+#3 {
+  text-shadow: 7px 7px 7px rgba(30,150,132);
+}</pre>
+        </div>
+        <div class="space"></div>
+        <div class="examplebox">
+          <div style="border-radius: 10px;margin: 1rem;display: inline-block;box-shadow: 0 0 10px rgba(30,30,30,0.6);height: 15rem;width: 10rem;">
+            <h2 style="border-radius: 10px 10px 0 0;width:10rem;margin:0;text-align: center; font-size: 6rem; padding: 2rem 0; background: #2D7998;color: white;text-shadow: 0 0 20px rgba(0,0,0,0.6); box-shadow: inset 0 0 40px rgba(250,250,250,0.1)">18</h2>
+            <p style="width: 100%; height: 5rem;text-align: center; font-size: 1rem; padding: 1.5rem 0;">18.Januar 2016  </p>
           </div>
         </div>
+        <div class="codebox split2">
+          <pre class="brush: xml"><div>
+  <h2>18</h2>
+  <p>18.Januar 2016</p>
+</div></pre>
+          <pre class="brush: css">div {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(30,30,30,0.6);
+  height: 15rem;
+  width: 10rem;
+}
+
+h2 {
+  border-radius: 10px 10px 0 0;
+  width:10rem;
+  margin:0;
+  text-align: center;
+  font-size: 6rem;
+  padding: 2rem 0;
+  background: #2D7998;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0,0,0,0.6);
+  box-shadow: inset 0 0 40px rgba(250,250,250,0.1);
+}
+
+p{
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1.5rem 0;
+}</pre>
+        </div>
+      </section>
+      <section id="g-17">
+        <h1 class="sectionheading">Display</h1>
+      </section>
+      <section id="g-18">
+        <h1 class="sectionheading">Flexbox</h1>
+      </section>
+      <section id="g-19">
+        <h1 class="sectionheading">Position</h1>
       </section>
     </div>
   </div>
@@ -439,6 +567,8 @@ ul {
   <script src="assets/js/plugins/TextPlugin.min.js"></script>
   <script src="assets/js/plugins/debug.addIndicators.min.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/examples.js"></script>
+  <script src="assets/js/jquerymagic.js"></script>
   <script>
     SyntaxHighlighter.defaults['gutter'] = true;
     SyntaxHighlighter.defaults['toolbar'] = false;
