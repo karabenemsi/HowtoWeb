@@ -87,7 +87,29 @@
         <h3>CSS = Maler</h3><img src="assets/img/gsapnocss.png"><img src="assets/img/gsapcss.png">
       </section>
       <section id="g-2">
-        <h1 class="sectionheading">Syntax</h1><img src="assets/img/csssyntax.png">
+        <h1 class="sectionheading">Syntax</h1>
+        <h3>Syntax</h3>
+        <div style="font-size:2rem" class="codebox">
+          <pre class="brush: css">p {
+  margin: 0;
+  font-size: 1.4em;
+}</pre>
+        </div>
+        <h3>Kommentare</h3>
+        <div style="font-size:2rem" class="codebox">
+          <pre class="brush: css">/* Dies ist ein Kommentar */
+p {
+  margin: 0;
+  font-size: 1.4em;
+}</pre>
+        </div>
+        <h3>!important</h3>
+        <div style="font-size:2rem" class="codebox">
+          <pre class="brush: css">p {
+  margin: 0 !important;
+  font-size: 1.4em;
+}</pre>
+        </div>
       </section>
       <section id="g-3">
         <h1 class="sectionheading">Einbinden</h1>
@@ -114,7 +136,7 @@
         </div>
         <h3>Import im Stylesheet</h3>
         <div class="codebox">
-          <pre class="brush: css">@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700);</pre>
+          <pre class="brush: css">@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700');</pre>
         </div>
       </section>
       <section id="g-4">
@@ -278,6 +300,7 @@ ul {
       </section>
       <section id="g-9">
         <h1 class="sectionheading">Hintergründe</h1>
+        <p class="prefix">(-prefix-)</p>
         <div class="codebox">
           <pre class="brush: css">#1 {
   background-color: #635245;
@@ -290,7 +313,9 @@ ul {
 #3 {
   background: url('csssyntax.png') no-repeat center center;
   background-size: cover; /* contain | 50px 30px */
-  
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }</pre>
         </div>
         <div class="examplebox">
@@ -300,7 +325,7 @@ ul {
         </div>
       </section>
       <section id="g-10">
-        <h1 class="sectionheading">Ränder</h1><a href="http://codepen.io/carolineartz/full/ogVXZj/" target="_blank">Codepen by carolineartz</a><img style="display: block; margin: 0 auto 2rem; width: auto;" src="assets/img/boxmodell.png" alt="Boxmodell">
+        <h1 class="sectionheading">Das Box-Modell</h1><a href="http://codepen.io/carolineartz/full/ogVXZj/" target="_blank">Codepen by carolineartz</a><img style="display: block; margin: 0 auto 2rem; width: auto;" src="assets/img/boxmodell.png" alt="Boxmodell">
         <div class="codebox">
           <pre class="brush: css">#1 {
   width: 120px;
@@ -349,6 +374,7 @@ ul {
           <div style="border: 10px solid #de54aa"></div>
         </div>
         <hr>
+        <p class="prefix">(-prefix-)</p>
         <div class="codebox">
           <pre class="brush: css">#1 {
   border: 10px solid #de54aa;
@@ -371,7 +397,7 @@ ul {
 }
 #2 {
   background: #de54aa;
-  margin: 5px 3px 10px 0;                
+  margin: 5px 3px 10px 0;
 }</pre>
         </div>
         <div class="examplebox">
@@ -427,6 +453,7 @@ ul {
       </section>
       <section id="g-15">
         <h1 class="sectionheading">Box-sizing</h1>
+        <p class="prefix">(-prefix-)</p>
         <div class="codebox split2">
           <pre class="brush: xml"><div id="1"></div>
 <div id="2"></div></pre>
@@ -472,6 +499,7 @@ ul {
       </section>
       <section id="g-16">
         <h1 class="sectionheading">Schatten</h1>
+        <p class="prefix">(-prefix-)</p>
         <div style="border-radius: 10px;margin: 0 1rem;display: inline-block;box-shadow: 0 0 10px rgba(30,30,30,0.6);height: 15rem;width: 10rem;">
           <h2 style="border-radius: 10px 10px 0 0;width:10rem;margin:0;text-align: center; font-size: 6rem; padding: 2rem 0; background: #2D7998;color: white;text-shadow: 0 0 20px rgba(0,0,0,0.6); box-shadow: inset 0 0 40px rgba(250,250,250,0.1)">18</h2>
           <p style="width: 100%; height: 5rem;text-align: center; font-size: 1rem; padding: 1.5rem 0;">18.Januar 2016</p>
@@ -543,12 +571,135 @@ p{
       </section>
       <section id="g-17">
         <h1 class="sectionheading">Display</h1>
+        <div class="codebox">
+          <pre class="brush: css">span {
+  height: 2em;
+  background: #253845;
+}
+#1 {
+  display: block;
+}
+#2 {
+  display: inline;
+}
+#3 {
+  display: inline-block;
+}
+#4 {
+  display: none;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <p>Hi, this is <span style="display: block; height: 2em;background:#253845;">Steven</span></p>
+          <p>Hi, this is <span style="display: inline; height: 2em;background:#253845;">Steven</span></p>
+          <p>Hi, this is <span style="display: inline-block; height: 2em;background:#253845;">Steven</span></p>
+          <p>Hi, this is <span style="display: none; height: 2em;background:#253845;">Steven</span></p>
+        </div>
       </section>
       <section id="g-18">
-        <h1 class="sectionheading">Flexbox</h1>
+        <h1 class="sectionheading">Flexbox </h1>
+        <p class="prefix">(-prefix-)</p>
+        <div class="codebox split2">
+          <pre class="brush: xml"><div class="flexbox">
+  <div class="flexitem">
+  </div>
+  <div class="flexitem">
+  </div>
+  <div class="flexitem">
+  </div>
+</div></pre>
+          <pre class="brush: css">.flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border: 2px solid #253845;
+}
+
+.flexitem{
+  height: 2em;
+  border: 2px solid #253845;
+  width:2em;
+}</pre>
+        </div>
+        <div class="examplebox">
+          <div style="width: 100%;display: flex;flex-direction: row;justify-content: space-around;align-items: center;border: 2px solid #253845;">
+            <div style="display: block;height: 2em;border: 2px solid #253845;width:2em;"></div>
+            <div style="display: block;height: 2em;border: 2px solid #253845;width:2em;"></div>
+            <div style="display: block;height: 2em;border: 2px solid #253845;width:2em;"></div>
+            <div style="display: block;height: 2em;border: 2px solid #253845;width:2em;"></div>
+          </div>
+        </div>
       </section>
       <section id="g-19">
         <h1 class="sectionheading">Position</h1>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  position: static;
+}
+#2 {
+  position: relative;
+  top: 2em;
+}
+#3 {
+  position: fixed;
+}
+#4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}</pre>
+        </div>
+        <div style="position:relative" class="examplebox">
+          <div style="background: #126285;"></div>
+          <div id="js_ex_2" style="background: #856212; position: relative;"></div>
+          <div id="js_ex_3" style="background: #621285;"></div>
+          <div id="js_ex_4" style="background: #628512; position: absolute; left: 16.1rem"></div>
+        </div>
+      </section>
+      <section id="g-20">
+        <h1 class="sectionheading">Float</h1>
+        <div class="codebox">
+          <pre class="brush: css">#1 {
+  float: left;
+}
+
+#2 {
+  float: right;
+}
+
+/*Switch1*/
+p {
+  clear: both;
+}</pre>
+        </div>
+        <div class="switchbox">
+          <div class="switchgroup">
+            <div id="js_ex_5_fo" class="switch">on</div>
+            <div id="js_ex_5_ff" class="switch sactive">off</div>
+          </div>
+        </div>
+        <div class="examplebox">
+          <div style="float:left;background:#159756;"></div>
+          <div style="float:right;background:#482846;"></div>
+          <p id="js_ex_5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere corporis, modi dolorem ullam obcaecati sed odio culpa nemo inventore, impedit ipsum hic magnam doloribus illum ipsa ea optio aliquam eos suscipit molestiae accusamus quibusdam? Maxime mollitia velit asperiores quisquam dolor, eum pariatur cum obcaecati minima ducimus sint beatae nesciunt, dignissimos unde cupiditate! Impedit totam cumque, facilis libero quaerat at molestiae fugiat odio consectetur adipisci voluptates ex omnis minus minima temporibus sed soluta blanditiis reiciendis illum qui commodi laborum! Hic.</p>
+          <div class="clearfix"></div>
+        </div>
+      </section>
+      <section id="g-21">
+        <h1 class="sectionheading">Kombinatoren</h1>
+      </section>
+      <section id="g-22">
+        <h1 class="sectionheading">Pseudo-Klassen</h1>
+      </section>
+      <section id="g-23">
+        <h1 class="sectionheading">Pseudo-Elemente</h1>
+      </section>
+      <section id="g-24">
+        <h1 class="sectionheading">Transitions</h1>
+      </section>
+      <section id="g-25">
+        <h1 class="sectionheading">Media Queries</h1>
       </section>
     </div>
   </div>

@@ -26,7 +26,28 @@ body
                     img(src="assets/img/gsapcss.png")
                 section#g-2
                     h1.sectionheading Syntax
-                    img(src="assets/img/csssyntax.png")
+                    h3 Syntax
+                    .codebox(style="font-size:2rem")
+                        pre(class="brush: css").
+                            p {
+                              margin: 0;
+                              font-size: 1.4em;
+                            }
+                    h3 Kommentare
+                    .codebox(style="font-size:2rem")
+                        pre(class="brush: css").
+                            /* Dies ist ein Kommentar */
+                            p {
+                              margin: 0;
+                              font-size: 1.4em;
+                            }
+                    h3 !important
+                    .codebox(style="font-size:2rem")
+                        pre(class="brush: css").
+                            p {
+                              margin: 0 !important;
+                              font-size: 1.4em;
+                            }
                 section#g-3
                     h1.sectionheading Einbinden
                     h3 Externes Stylesheet
@@ -53,7 +74,7 @@ body
                     h3 Import im Stylesheet
                     .codebox
                       pre(class="brush: css").
-                        @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700);
+                        @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,300,700');
                 section#g-4
                     h1.sectionheading Vererbung
                     .codebox.split2
@@ -204,6 +225,7 @@ body
                         li Gummibärchen
                 section#g-9
                   h1.sectionheading Hintergründe
+                  p.prefix (-prefix-)
                   .codebox
                     pre(class="brush: css").
                       #1 {
@@ -217,14 +239,16 @@ body
                       #3 {
                         background: url('csssyntax.png') no-repeat center center;
                         background-size: cover; /* contain | 50px 30px */
-                        
+                        -o-background-size: cover;
+                        -moz-background-size: cover;
+                        -webkit-background-size: cover;
                       }
                   .examplebox
                     div(style="margin:5px;background: #635245;")
                     div(style="margin:5px;height:10rem;width:10rem;background: url('assets/img/csssyntax.png');")
                     div(style="margin:5px;height:10rem;width:10rem;background:  url('assets/img/csssyntax.png') no-repeat left center;background-size: cover;")
                 section#g-10
-                  h1.sectionheading Ränder
+                  h1.sectionheading Das Box-Modell
                   a(href="http://codepen.io/carolineartz/full/ogVXZj/", target="_blank") Codepen by carolineartz
                   img(style="display: block; margin: 0 auto 2rem; width: auto;", src="assets/img/boxmodell.png", alt="Boxmodell")
                   .codebox
@@ -271,6 +295,7 @@ body
                     div(style="border: 10px solid #de54aa")
                     
                   hr
+                  p.prefix (-prefix-)
                   .codebox
                     pre(class="brush: css").
                       #1 {
@@ -294,7 +319,7 @@ body
                       }
                       #2 {
                         background: #de54aa;
-                        margin: 5px 3px 10px 0;                
+                        margin: 5px 3px 10px 0;
                       }
                   .examplebox
                     div(style="background: #3252de;")
@@ -342,6 +367,7 @@ body
                     div#js_ex_1(style="width:50%;height:10rem;background:#54aade;padding:0;border:5px solid #249832;")
                 section#g-15
                   h1.sectionheading Box-sizing
+                  p.prefix (-prefix-)
                   .codebox.split2
                     pre(class="brush: xml").
                       <div id="1"></div>
@@ -386,6 +412,7 @@ body
                     div(style="width:300px;height:150px;padding:20px;border: 5px solid #54aade;box-sizing:border-box;")
                 section#g-16
                   h1.sectionheading Schatten
+                  p.prefix (-prefix-)
                   div(style="border-radius: 10px;margin: 0 1rem;display: inline-block;box-shadow: 0 0 10px rgba(30,30,30,0.6);height: 15rem;width: 10rem;")
                     h2(style="border-radius: 10px 10px 0 0;width:10rem;margin:0;text-align: center; font-size: 6rem; padding: 2rem 0; background: #2D7998;color: white;text-shadow: 0 0 20px rgba(0,0,0,0.6); box-shadow: inset 0 0 40px rgba(250,250,250,0.1)") 18
                     p(style="width: 100%; height: 5rem;text-align: center; font-size: 1rem; padding: 1.5rem 0;") 18.Januar 2016
@@ -451,10 +478,127 @@ body
                       }
                 section#g-17
                   h1.sectionheading Display
+                  .codebox
+                    pre(class="brush: css").
+                      span {
+                        height: 2em;
+                        background: #253845;
+                      }
+                      #1 {
+                        display: block;
+                      }
+                      #2 {
+                        display: inline;
+                      }
+                      #3 {
+                        display: inline-block;
+                      }
+                      #4 {
+                        display: none;
+                      }
+                  .examplebox
+                    p Hi, this is 
+                      span(style="display: block; height: 2em;background:#253845;") Steven
+                    p Hi, this is 
+                      span(style="display: inline; height: 2em;background:#253845;") Steven
+                    p Hi, this is 
+                      span(style="display: inline-block; height: 2em;background:#253845;") Steven
+                    p Hi, this is 
+                      span(style="display: none; height: 2em;background:#253845;") Steven
+
                 section#g-18
-                  h1.sectionheading Flexbox
+                  h1.sectionheading Flexbox 
+                  p.prefix (-prefix-)
+                  .codebox.split2
+                    pre(class="brush: xml").
+                      <div class="flexbox">
+                        <div class="flexitem">
+                        </div>
+                        <div class="flexitem">
+                        </div>
+                        <div class="flexitem">
+                        </div>
+                      </div>
+                    pre(class="brush: css").
+                      .flexbox {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-direction: row;
+                        border: 2px solid #253845;
+                      }
+                      
+                      .flexitem{
+                        height: 2em;
+                        border: 2px solid #253845;
+                        width:2em;
+                      }
+                  .examplebox
+                    div(style="width: 100%;display: flex;flex-direction: row;justify-content: space-around;align-items: center;border: 2px solid #253845;")
+                      div(style="display: block;height: 2em;border: 2px solid #253845;width:2em;")
+                      div(style="display: block;height: 2em;border: 2px solid #253845;width:2em;")
+                      div(style="display: block;height: 2em;border: 2px solid #253845;width:2em;")
+                      div(style="display: block;height: 2em;border: 2px solid #253845;width:2em;")
                 section#g-19
                   h1.sectionheading Position
+                  .codebox
+                    pre(class="brush: css").
+                      #1 {
+                        position: static;
+                      }
+                      #2 {
+                        position: relative;
+                        top: 2em;
+                      }
+                      #3 {
+                        position: fixed;
+                      }
+                      #4 {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                      }
+                  .examplebox(style="position:relative")
+                    div(style="background: #126285;")
+                    div#js_ex_2(style="background: #856212; position: relative;")
+                    div#js_ex_3(style="background: #621285;")
+                    div#js_ex_4(style="background: #628512; position: absolute; left: 16.1rem")
+                section#g-20
+                  h1.sectionheading Float
+                  .codebox
+                    pre(class="brush: css").
+                      #1 {
+                        float: left;
+                      }
+                      
+                      #2 {
+                        float: right;
+                      }
+                      
+                      /*Switch1*/
+                      p {
+                        clear: both;
+                      }
+                  .switchbox
+                    .switchgroup
+                      .switch#js_ex_5_fo on
+                      .switch.sactive#js_ex_5_ff off
+                  .examplebox
+                    div(style="float:left;background:#159756;")
+                    div(style="float:right;background:#482846;")
+                    p#js_ex_5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facere corporis, modi dolorem ullam obcaecati sed odio culpa nemo inventore, impedit ipsum hic magnam doloribus illum ipsa ea optio aliquam eos suscipit molestiae accusamus quibusdam? Maxime mollitia velit asperiores quisquam dolor, eum pariatur cum obcaecati minima ducimus sint beatae nesciunt, dignissimos unde cupiditate! Impedit totam cumque, facilis libero quaerat at molestiae fugiat odio consectetur adipisci voluptates ex omnis minus minima temporibus sed soluta blanditiis reiciendis illum qui commodi laborum! Hic.
+                    div.clearfix
+                section#g-21
+                  h1.sectionheading Kombinatoren
+                section#g-22
+                  h1.sectionheading Pseudo-Klassen
+                section#g-23
+                  h1.sectionheading Pseudo-Elemente
+                section#g-24
+                  h1.sectionheading Transitions
+                section#g-25
+                  h1.sectionheading Media Queries
+                  
                   
                 
 
