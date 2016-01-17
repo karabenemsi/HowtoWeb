@@ -6,7 +6,7 @@ body
                 .gliederung
                   ol
                       h1 Gliederung
-                      - var sectionlist = ["JQuerymagic"]
+                      - var sectionlist = ["JQuerymagic", "Einbinden", "Syntax", "Selectors","Filtern","Events","Classes","CSS","Hide and Show"]
                       - var i = 1
                       each section in sectionlist
                         - var g = "#g-";
@@ -16,6 +16,236 @@ body
 
                 section#g-1
                   h1.sectionheading JQuerymagic
+                  div.buttoncontent
+                    .button#startmagic Start Magic
+                  .artboard
+                    .bb8
+
+                      .bb8-body
+
+                        .dot.dot-1
+                          .line.line-1
+                          .line.line-2
+                          .line.line-3
+                        .dot.dot-2
+
+                        .circle.circle-1
+                        .circle.circle-2
+                        .circle.circle-3
+
+                      .body-shadow-crop  
+                        .body-shadow
+
+                      .bb8-head
+
+                        .head-bottom
+                          .head-side-1
+                          .head-side-2
+                          .head-bottom-base
+
+                        .head-top-crop
+                          .head-top
+
+                        .lens
+                        .freckle
+
+                      .speedlines
+                        .one.tail
+                        .two.tail
+                        .three
+                        .four
+                        .five.tail
+
+                      .sparkles
+                        .one.small.pulse-1
+                        .two.blue.small.pulse-2
+                        .three.blue.med.pulse-3
+                        .four.orange.pulse-2
+                        .five.orange.pulse-1
+                        .six.blue.small.pulse
+                        .seven.blue.small.pulse
+                        .eight.small.pulse-3
+                        .nine.pulse
+                        .ten.orange.small-1.pulse
+                        .eleven.small.pulse
+                        .twelve.small.pulse-2
+                        .thirteen.orange.small.pulse
+                        .fourteen.orange.med.pulse-3
+                        .fifteen.small.pulse-1
+                        .sixteen.small.pulse
+
+                      .ground
+                        .one
+                          .bump.move-1
+                        .two
+                        .three
+                          .bump.move-2
+                        .four
+                          .bump
+                        .five
+                        .six
+                          .bump.move-2
+                        .seven
+                          .bump
+                        .eight
+                          .bump.move-1
+
+                  .credit.center
+                    p.center A Pen by <a href="http://travisneilson.com/">Travis Neilson</a>
+                section#g-2
+                  h1.sectionheading Einbinden
+                  h2 Head
+                  .codebox
+                    pre(class="brush: xml").
+                      &lt;html&gt;
+                        &lt;head&gt;
+                          &lt;script src="path/to/jquery.min.js" &gt;
+                          &lt;/script&gt;
+                          &lt;script src="script.js"&gt;
+                          &lt;/script&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;/body&gt;
+                      &lt;/html&gt;
+                  h2 Footer
+                  .codebox
+                    pre(class="brush: xml").
+                      &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                          &lt;!-- Stuff --&gt;
+                          &lt;script src="path/to/jquery.min.js" &gt;
+                          &lt;/script&gt;
+                          &lt;script src="script.js"&gt;
+                          &lt;/script&gt;
+                        &lt;/body&gt;
+                      &lt;/html&gt;
+                section#g-3
+                  h1.sectionheading Syntax
+                  h3 Syntax
+                  .codebox(style="font-size:2rem")
+                      pre(class="brush: js").
+                          $(selector).action()
+                  h3 Kommentare
+                  .codebox(style="font-size:2rem")
+                      pre(class="brush: js").
+                          // Dies ist ein Kommentar
+                          $("p").hide();
+                  h3 Hauptfunktion
+                  .codebox(style="font-size:2rem")
+                      pre(class="brush: js").
+                        $(document).ready(function(){
+                         // jQuery methods go here...
+                        }); 
+                section#g-4
+                  h1.sectionheading Selectors
+                  .codebox
+                    pre(class="brush: js").
+                      $('p')
+                      
+                      $('.button')
+                      
+                      $('#js_id')
+                      
+                      $('.button::before')
+                section#g-5
+                  h1.sectionheading Filtern
+                  .codebox
+                    pre(class="brush: js").
+                      $(function(){
+                        
+                        $('div p').first();
+                        
+                        $('div p').last();
+                        
+                        $('p').eq(1); //Start with 0
+                        
+                        $('p').filter('.big');
+                        
+                        $('p').not('.big');
+                        
+                      });
+                section#g-6
+                  h1.sectionheading Events
+                  .codebox
+                    pre(class="brush: js").
+                      $(function(){
+                      
+                        $('.button').click(function(){
+                          alert('You clicked me!'):
+                        });
+                        
+                        $('.button').hover(function(){
+                          alert('You hovered me!'):
+                        });
+                      
+                      });
+                  .examplebox
+                    .button#js_ex_6
+                    .button#js_ex_7
+                  
+                section#g-7
+                  h1.sectionheading Classes
+                  .codebox
+                    pre(class="brush: js").
+                      $(function(){
+                      
+                        $('.button').click(function(){
+                          $(this).addClass('bg-pink');
+                        });
+                        
+                        $('.button').click(function(){
+                          $(this).removeClass('bg-pink');
+                        });
+                      
+                      });
+                  .examplebox
+                    .button#js_ex_8
+                    .button#js_ex_9(style="background: pink;")
+                  
+                  
+                section#g-8
+                  h1.sectionheading CSS
+                  .codebox
+                    pre(class="brush: js").
+                      $(function(){
+                      
+                        $('.button').click(function(){
+                          $(this).css('borderWidth','10px');
+                        });
+                        
+                        $('.button').click(function(){
+                          $(this).css({'background':'#548486', 'borderWidth':'15px'});
+                        });
+                      
+                      });
+                  .examplebox
+                    .button#js_ex_10
+                    .button#js_ex_11
+                  
+                section#g-9
+                  h1.sectionheading Hide and Show
+                  .codebox
+                    pre(class="brush: js").
+                      $(function(){
+                      
+                        $('.button .hide').click(function(){
+                          $('#disapear').hide('500');
+                        });
+                        
+                        $('.button .show').click(function(){
+                          $('#disapear').show('200');
+                        });
+                      
+                      });
+                  .examplebox
+                    .button#js_ex_12_1(style="display: block; background: #45fe89;") Hide
+                    .button#js_ex_12_2(style="display: block; background: #fe5845;") Show
+                    div#js_ex_12(style="display: block; background: #95fe4e;") Hide Me
+                      
+                  
+                  
 
                   
                 

@@ -1,0 +1,58 @@
+include ./modules/head.jade
+body
+    include ./modules/header.jade
+    .content#page4
+            .container
+                .gliederung
+                  ol
+                      h1 Gliederung
+                      - var sectionlist = ["Grundstruktur Index","Grundstruktur", "Schreibstil", "Dateiordnung"]
+                      - var i = 1
+                      each section in sectionlist
+                        - var g = "#g-";
+                        li(id="a-" + i)
+                          a(href=g + i)= section
+                          - i++ 
+
+                section#g-1
+                  h1.sectionheading Grundstruktur Index
+                  h2 Desktop
+                  .showcontainer.desktop
+                    .url
+                    .sitecontainer
+                      .wrapper
+                        .bigheader Azubi-Welten
+                        .col Flexitem
+                          .bigsquare
+                            .smallsquare
+                            .text
+                        .col Flexitem
+                          .bigsquare
+                            .smallsquare  
+                            .text
+                  h2 Mobile
+                  .showcontainer.mobile
+                    .url
+                    .sitecontainer
+                      .wrapper
+                        .bigheader Azubi-Welten
+                        .col
+                          .bigsquare
+                            .smallsquare
+                            .text
+                        .col
+                          .bigsquare
+                            .smallsquare  
+                            .text
+                section#g-2
+                  h1.sectionheading Grundstruktur
+                  h2 Desktop
+                  a.big(href="azubisite/site.html" target="_blank") Showsite
+                      
+                section#g-3
+                  h1.sectionheading Schreibstil
+                section#g-4
+                  h1.sectionheading Dateiordnung
+                  
+                  
+    include ./modules/footer.jade

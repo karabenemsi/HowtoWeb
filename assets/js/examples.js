@@ -53,7 +53,43 @@ $(function(){
     $('#js_ex_5').css('clear', 'none');
   });
 
-  
+
+//
+//  JQuery
+//
+
+  $('#js_ex_6').click(function(){
+    alert('You clicked me!');
+  });
+
+  $('#js_ex_7').hover(function(){
+    $(this).html('You hovered me');
+  });
+
+  $('#js_ex_8').click(function(){
+    $(this).css('background','pink');
+  });
+
+  $('#js_ex_9').click(function(){
+    $(this).css('background', '#548944');
+  });
+
+  $('#js_ex_10').click(function(){
+    $(this).css('borderWidth','10px');
+  });
+
+  $('#js_ex_11').click(function(){
+    $(this).css({'background':'#548486', 'borderWidth':'15px'});
+  });
+
+  $('#js_ex_12_1').click(function () {
+    $('#js_ex_12').hide('500');
+  });
+  $('#js_ex_12_2').click(function () {
+    $('#js_ex_12').show('200');
+  });
+
+
 
 
 

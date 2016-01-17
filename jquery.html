@@ -30,10 +30,268 @@
           <h1>Gliederung</h1>
           <li id="a-1"><a href="#g-1">JQuerymagic</a>
           </li>
+          <li id="a-2"><a href="#g-2">Einbinden</a>
+          </li>
+          <li id="a-3"><a href="#g-3">Syntax</a>
+          </li>
+          <li id="a-4"><a href="#g-4">Selectors</a>
+          </li>
+          <li id="a-5"><a href="#g-5">Filtern</a>
+          </li>
+          <li id="a-6"><a href="#g-6">Events</a>
+          </li>
+          <li id="a-7"><a href="#g-7">Classes</a>
+          </li>
+          <li id="a-8"><a href="#g-8">CSS</a>
+          </li>
+          <li id="a-9"><a href="#g-9">Hide and Show</a>
+          </li>
         </ol>
       </div>
       <section id="g-1">
         <h1 class="sectionheading">JQuerymagic</h1>
+        <div class="buttoncontent">
+          <div id="startmagic" class="button">Start Magic</div>
+        </div>
+        <div class="artboard">
+          <div class="bb8">
+            <div class="bb8-body">
+              <div class="dot dot-1">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+              <div class="dot dot-2"></div>
+              <div class="circle circle-1"></div>
+              <div class="circle circle-2"></div>
+              <div class="circle circle-3"></div>
+            </div>
+            <div class="body-shadow-crop"> 
+              <div class="body-shadow"></div>
+            </div>
+            <div class="bb8-head">
+              <div class="head-bottom">
+                <div class="head-side-1"></div>
+                <div class="head-side-2"></div>
+                <div class="head-bottom-base"></div>
+              </div>
+              <div class="head-top-crop">
+                <div class="head-top"></div>
+              </div>
+              <div class="lens"></div>
+              <div class="freckle"></div>
+            </div>
+            <div class="speedlines">
+              <div class="one tail"></div>
+              <div class="two tail"></div>
+              <div class="three"></div>
+              <div class="four"></div>
+              <div class="five tail"></div>
+            </div>
+            <div class="sparkles">
+              <div class="one small pulse-1"></div>
+              <div class="two blue small pulse-2"></div>
+              <div class="three blue med pulse-3"></div>
+              <div class="four orange pulse-2"></div>
+              <div class="five orange pulse-1"></div>
+              <div class="six blue small pulse"></div>
+              <div class="seven blue small pulse"></div>
+              <div class="eight small pulse-3"></div>
+              <div class="nine pulse"></div>
+              <div class="ten orange small-1 pulse"></div>
+              <div class="eleven small pulse"></div>
+              <div class="twelve small pulse-2"></div>
+              <div class="thirteen orange small pulse"></div>
+              <div class="fourteen orange med pulse-3"></div>
+              <div class="fifteen small pulse-1"></div>
+              <div class="sixteen small pulse"></div>
+            </div>
+            <div class="ground">
+              <div class="one">
+                <div class="bump move-1"></div>
+              </div>
+              <div class="two"></div>
+              <div class="three">
+                <div class="bump move-2"></div>
+              </div>
+              <div class="four">
+                <div class="bump"></div>
+              </div>
+              <div class="five"></div>
+              <div class="six">
+                <div class="bump move-2"></div>
+              </div>
+              <div class="seven">
+                <div class="bump"></div>
+              </div>
+              <div class="eight">
+                <div class="bump move-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="credit center">
+          <p class="center">A Pen by <a href="http://travisneilson.com/">Travis Neilson</a></p>
+        </div>
+      </section>
+      <section id="g-2">
+        <h1 class="sectionheading">Einbinden</h1>
+        <h2>Head</h2>
+        <div class="codebox">
+          <pre class="brush: xml">&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src="path/to/jquery.min.js" &gt;
+    &lt;/script&gt;
+    &lt;script src="script.js"&gt;
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+        <h2>Footer</h2>
+        <div class="codebox">
+          <pre class="brush: xml">&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Stuff --&gt;
+    &lt;script src="path/to/jquery.min.js" &gt;
+    &lt;/script&gt;
+    &lt;script src="script.js"&gt;
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+        </div>
+      </section>
+      <section id="g-3">
+        <h1 class="sectionheading">Syntax</h1>
+        <h3>Syntax</h3>
+        <div style="font-size:2rem" class="codebox">
+          <pre class="brush: js">$(selector).action()</pre>
+        </div>
+        <h3>Kommentare</h3>
+        <div style="font-size:2rem" class="codebox">
+          <pre class="brush: js">// Dies ist ein Kommentar
+$("p").hide();</pre>
+        </div>
+        <h3>Hauptfunktion</h3>
+        <div style="font-size:2rem" class="codebox">
+          <pre class="brush: js">$(document).ready(function(){
+ // jQuery methods go here...
+}); </pre>
+        </div>
+      </section>
+      <section id="g-4">
+        <h1 class="sectionheading">Selectors</h1>
+        <div class="codebox">
+          <pre class="brush: js">$('p')
+
+$('.button')
+
+$('#js_id')
+
+$('.button::before')</pre>
+        </div>
+      </section>
+      <section id="g-5">
+        <h1 class="sectionheading">Filtern</h1>
+        <div class="codebox">
+          <pre class="brush: js">$(function(){
+  
+  $('div p').first();
+  
+  $('div p').last();
+  
+  $('p').eq(1); //Start with 0
+  
+  $('p').filter('.big');
+  
+  $('p').not('.big');
+  
+});</pre>
+        </div>
+      </section>
+      <section id="g-6">
+        <h1 class="sectionheading">Events</h1>
+        <div class="codebox">
+          <pre class="brush: js">$(function(){
+
+  $('.button').click(function(){
+    alert('You clicked me!'):
+  });
+  
+  $('.button').hover(function(){
+    alert('You hovered me!'):
+  });
+
+});</pre>
+        </div>
+        <div class="examplebox">
+          <div id="js_ex_6" class="button"></div>
+          <div id="js_ex_7" class="button"></div>
+        </div>
+      </section>
+      <section id="g-7">
+        <h1 class="sectionheading">Classes</h1>
+        <div class="codebox">
+          <pre class="brush: js">$(function(){
+
+  $('.button').click(function(){
+    $(this).addClass('bg-pink');
+  });
+  
+  $('.button').click(function(){
+    $(this).removeClass('bg-pink');
+  });
+
+});</pre>
+        </div>
+        <div class="examplebox">
+          <div id="js_ex_8" class="button"></div>
+          <div id="js_ex_9" style="background: pink;" class="button"></div>
+        </div>
+      </section>
+      <section id="g-8">
+        <h1 class="sectionheading">CSS</h1>
+        <div class="codebox">
+          <pre class="brush: js">$(function(){
+
+  $('.button').click(function(){
+    $(this).css('borderWidth','10px');
+  });
+  
+  $('.button').click(function(){
+    $(this).css({'background':'#548486', 'borderWidth':'15px'});
+  });
+
+});</pre>
+        </div>
+        <div class="examplebox">
+          <div id="js_ex_10" class="button"></div>
+          <div id="js_ex_11" class="button"></div>
+        </div>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Hide and Show</h1>
+        <div class="codebox">
+          <pre class="brush: js">$(function(){
+
+  $('.button .hide').click(function(){
+    $('#disapear').hide('500');
+  });
+  
+  $('.button .show').click(function(){
+    $('#disapear').show('200');
+  });
+
+});</pre>
+        </div>
+        <div class="examplebox">
+          <div id="js_ex_12_1" style="display: block; background: #45fe89;" class="button">Hide</div>
+          <div id="js_ex_12_2" style="display: block; background: #fe5845;" class="button">Show</div>
+          <div id="js_ex_12" style="display: block; background: #95fe4e;">Hide Me</div>
+        </div>
       </section>
     </div>
   </div>
@@ -43,6 +301,7 @@
   <script src="assets/js/highlighter/shLegacy.js"></script>
   <script src="assets/js/highlighter/shBrushCss.js"></script>
   <script src="assets/js/highlighter/shBrushXml.js"></script>
+  <script src="assets/js/highlighter/shBrushJScript.js"></script>
   <script src="assets/js/ScrollMagic.min.js"></script>
   <script src="assets/js/TweenMax.min.js"></script>
   <script src="assets/js/TimelineMax.min.js"></script>
