@@ -1,0 +1,207 @@
+$c_site_bg: rgba(20,20,80,0.3)
+$c_site_box: rgba(0,0,60,0.6)
+$c_site_shadow: rgba(200,200,200,0.5)
+
+.site_wrapper
+  background: $c_site_bg
+  margin: 0
+  padding: 0
+  #site_progress
+    position: fixed
+    top: 0
+    width: 100%
+    height: 0.3rem
+    background: $c_site_bg
+    z-index: 510
+  .site_slider
+    height: 50vh
+    width: 100%
+    margin-top: 7vh
+    background: $c_site_bg
+  .site_header
+    background: $c_site_bg
+    position: fixed
+    z-index: 500
+    top: 0
+    left: 0
+    width: 100%
+    min-height: 3.2rem
+    .site_headercontent
+      background: $c_site_bg
+      display: flex
+      justify-content: space-between
+      height: 7vh
+      min-height: 3.2rem
+      background: $c_site_bg
+    .site_logoleft
+      width: 15vw
+      max-width: 30%
+      margin-left: 2vw
+      background: $c_site_bg
+    .site_logoright
+      width: 15vw
+      max-width: 30%
+      margin-left: 2vw
+      background: $c_site_bg
+    .site_nav
+      background: $c_site_bg
+      width: 60vw
+      ul
+        display: flex
+        justify-content: space-around
+        align-items: center
+        background: $c_site_bg
+        height: 100%
+        padding: 0
+        margin: 0
+      li
+        display: block
+        min-width: 10vw
+        height: 100%
+        background: $c_site_bg
+  .site_content
+    margin: 5rem 0 0 0
+    padding: 0
+    width: 100%
+    left: 0
+    background: $c_site_bg
+    .site_sidebar
+      position: absolute
+      right: 0
+      width: 30vw
+      margin: 0
+      padding: 0
+      z-index: 50
+      background: $c_site_bg
+      .sb_news
+        width: 80%
+        margin: 3vh 10%
+        padding: 0
+        background: $c_site_bg
+      .sb_news-image
+        width: 50%
+        height: auto
+        float: left
+        border-radius: 3vh
+        padding: 3%
+        box-sizing: border-box
+        .filler
+          background: $c_site_bg
+          height: 120px
+          width: 100%
+      h2
+        width: 45%
+        float: right
+        background: $c_site_bg
+        font-size: 1.6em
+      .sb_news-p
+        clear: both
+        font-size: 0.9rem
+        font-weight: 400
+        background: $c_site_bg
+        height: 60px
+      .site_button
+        width: 100px
+        height: 40px
+        background: $c_site_bg
+    .site_maincol
+      position: relative
+      width: 54.1vw
+      margin: 0
+      padding: 0 5vw 0 10vw
+      background: $c_site_bg
+      .site_filler
+       background: $c_site_bg
+       height: 900px
+       padding: 3rem 0 0 0
+      h1
+        font-size: 2em
+        margin: 0 0.67em 0
+        line-height: 1.05
+        letter-spacing: -1px
+        font-size: 2.8rem
+        font-weight: 100
+        padding: 0.6em 0 0.3em 0
+        border-top: 2px solid darken($c_site_bg, 70%)
+        background: $c_site_bg
+  .site_footer
+    background: $c_site_bg
+    div
+      padding: 2em 0
+      background: $c_site_bg
+    h2
+      background: $c_site_bg
+    .footermenu
+      font-size: 0.8rem
+      background: $c_site_bg
+      width: 100%
+      margin: 0
+      text-align: center
+      li
+        display: block
+        background: $c_site_bg
+        height: 100%
+        width: 10vw
+      ul
+        display: flex
+        margin: 0
+        padding: 0
+        list-style: none
+        justify-content: space-around
+        align-items: center
+        background: $c_site_bg
+        height: 2rem
+    .copyright
+      padding: 0.5em
+      margin: 0
+      background: $c_site_bg
+      p
+        background: $c_site_bg
+        width: 30%
+        height: 12px
+        margin: 0 auto
+
+  .site_backbutton
+    position: fixed
+    height: 50vh
+    width: 50vh
+    background: rgb(20,20,80)
+    top:25vh
+    left: calc((100vw - 50vh)*0.5)
+    box-shadow: 0 0 50px $c_site_shadow
+    border-radius: 50%
+    z-index: 2000
+    font-size: 10rem
+    overflow: hidden
+    text-align: center
+    transition: all 0.5s
+    &:hover
+      // box-shadow: 0 0 30px lighten($c_site_shadow, 30%)
+      transform: scale(0.99)
+    p
+      padding: 25% 0 0 0
+      margin: 0 -15%
+      text-align: center
+      width: 100%
+      height: 100%
+      line-height: 1
+      transition: all 0.5s
+      color: #fff
+      &:hover
+       color: #6060ad
+       transform: scale(1.06)
+  .site_box
+    height: 100vh
+    width: 100vw
+    z-index: 1800
+    position: fixed
+    top: 0
+    left: 0
+    background: $c_site_box
+
+
+
+
+
+[class*='js_site_']
+  opacity: 0

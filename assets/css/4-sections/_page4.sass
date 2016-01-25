@@ -76,3 +76,34 @@
       left: 20%
       background: rgba(250,12,16,0.6)
       text-align: center
+  .colbuttons
+    // height: 20rem
+    width: 100%
+    // background: #fff
+    a
+      width: 30%
+      box-sizing: border-box
+      display: block
+      float: left
+      padding: 5rem
+      height: 20rem
+      text-align: center
+      font-size: 2rem
+      margin: 0 1.5%
+      border-radius: 0.5rem
+      transition: all 0.5s
+      &:nth-child(1)
+        background: #5684fe
+        &:hover
+          background: lighten(#5684fe, 7%)
+          color: $c_font
+      &:nth-child(2)
+        background: #489548
+        &:hover
+          background: lighten(#489548, 7%)
+          color: $c_font
+      &:nth-child(3)
+        background: #ad4684
+        &:hover
+          background: lighten(#ad4684, 7%)
+          color: $c_font
