@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>How to Web</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1 id="header_title"><a href="#"></a></h1>
+    <nav>
+      <ul>
+        <li class="cat1"><a href="index.html">Home</a></li>
+        <li class="cat3"><a href="#">Agenda</a>
+          <ul>
+            <li><a href="index.html">HTML5</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li> <a href="jquery.html">JQuery</a></li>
+            <li> <a href="struktur.html">Grobe Struktur</a></li>
+            <li> <a href="aufbau.html">Detailierter Aufbau</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="margin_box_top"></div>
+  <div id="page4" class="content">
+    <div class="container">
+      <div class="gliederung">
+        <ol>
+          <h1>Gliederung</h1>
+          <li id="a-1"><a href="#g-1">How We Do It</a>
+          </li>
+          <li id="a-2"><a href="#g-2">Header</a>
+          </li>
+          <li id="a-3"><a href="#g-3">Slider</a>
+          </li>
+          <li id="a-4"><a href="#g-4">Main</a>
+          </li>
+          <li id="a-5"><a href="#g-5">Aside</a>
+          </li>
+          <li id="a-6"><a href="#g-6">Footer</a>
+          </li>
+          <li id="a-7"><a href="#g-7">JavaScript</a>
+          </li>
+          <li id="a-8"><a href="#g-8">Sections</a>
+          </li>
+          <li id="a-9"><a href="#g-9">Seitenüberschrift</a>
+          </li>
+          <li id="a-10"><a href="#g-10">​Standartüberschrift</a>
+          </li>
+          <li id="a-11"><a href="#g-11">​Megaüberschrift</a>
+          </li>
+          <li id="a-12"><a href="#g-12">​Icons</a>
+          </li>
+          <li id="a-13"><a href="#g-13">​Text und Titel</a>
+          </li>
+          <li id="a-14"><a href="#g-14">​Text und Bild</a>
+          </li>
+          <li id="a-15"><a href="#g-15">​Bilder</a>
+          </li>
+          <li id="a-16"><a href="#g-16">​Postkarte</a>
+          </li>
+          <li id="a-17"><a href="#g-17">​Ausbilder</a>
+          </li>
+          <li id="a-18"><a href="#g-18">​Kontakt</a>
+          </li>
+          <li id="a-19"><a href="#g-19">​Produkte</a>
+          </li>
+          <li id="a-20"><a href="#g-20">​Accordion​</a>
+          </li>
+        </ol>
+      </div>
+      <section id="g-1">
+        <h1 class="sectionheading">How We Do It</h1>
+        <div class="examplebox">
+          <h1>Dies ist eine Überschrift</h1>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;h1&gt;Dies ist eine Überschrift&lt;/h1&gt;</pre>
+          <pre class="brush: css">h1 {
+  font-family: 'Fira Sans', sans-serif;
+  color: #666;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin: 3em 0 0;
+  padding: 0.6em 0 0.3em 0;
+  border-top: 1px solid #ddd;
+}
+</pre>
+        </div>
+      </section>
+      <section id="g-2">
+        <h1 class="sectionheading">Header</h1>
+        <div class="examplebox">
+          <header>
+            <div id="progress"></div>
+            <div class="headercontent">
+              <div class="logo logo-left"><a href="">
+                  <h2 class="logo-training">Groz-Beckert Ausbildung</h2></a></div>
+              <nav>
+                <ul>
+                  <li><a href="" class="invisiblelink nav_active">Home</a></li>
+                  <li><a href="" class="invisiblelink">Über uns</a></li>
+                  <li><a href="" class="invisiblelink">Karriere</a></li>
+                  <li><a href="" class="invisiblelink">Kontakt</a></li>
+                </ul>
+              </nav><a href="" class="logo logo-right">
+                <div class="button">
+                  <p>Zur Azubifirma</p>
+                </div></a>
+            </div>
+          </header>
+          <div class="clearfix"></div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;header class="headerfixed"&gt;
+  &lt;!-- Progressbar--&gt;
+  &lt;div id="progress"&gt;&lt;/div&gt;
+  &lt;!-- Content--&gt;
+  &lt;div class="headercontent"&gt;
+    &lt;!-- Logo--&gt;
+    &lt;div class="logo logo-left"&gt;
+      &lt;a href="index.html"&gt;
+        &lt;h2 class="logo-training"&gt;
+          Groz-Beckert Ausbildung
+        &lt;/h2&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- Navigation START--&gt;
+    &lt;nav&gt;
+      &lt;!-- Nav --&gt;
+    &lt;/nav&gt;
+    &lt;!-- Navigation END--&gt;
+    &lt;!-- Button--&gt;
+    &lt;a href="dummy.html" class="logo logo-right"&gt;
+      &lt;div class="button"&gt;
+        &lt;p&gt;Zur Azubifirma&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</pre>
+          <pre class="brush: css">#progress {
+  /* Place it to the top */
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 0.3rem;
+  background: #004f23;
+  z-index: 510;
+}
+
+header {
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Don't let it become too small */
+  min-height: 3.2rem;
+}
+
+header .logo-training {
+  font-size: 2.33333vh;
+  margin: 0;
+  /* No space on top of the font */
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  header .logo-training {
+    font-size: 1.75vh;
+  }
+}
+
+header .headercontent {
+  /* Flexbox for proper alignment */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 7vh;
+  min-height: 3.2rem;
+  background: #fff;
+}
+
+header.headerfixed .logo-training {
+  font-size: 2.33333vh;
+  margin: 0;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  header.headerfixed .logo-training {
+    font-size: 1.75vh;
+  }
+}
+
+header.headerfixed .headercontent {
+  background: #fff;
+}
+
+header.headertransparent {
+  position: absolute;
+  top: 0;
+  z-index: 450;
+}
+
+header.headertransparent .logo-training {
+  font-size: 4.66667vh;
+  margin: 0;
+  line-height: 1;
+  color: #004f23;
+  text-shadow: 0 0 0.3em 0.3em #fff;
+}
+
+@media (max-width: 768px) {
+  header.headertransparent .logo-training {
+    font-size: 3.5vh;
+  }
+}
+
+header.headertransparent .headercontent {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: transparent;
+  width: 100%;
+}
+
+header.headertransparent .logo {
+  height: 14vh;
+  width: auto;
+  max-width: auto;
+}
+
+.logo {
+  /* Flexbox to position the logo at the exact center */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2vw;
+  /* Give some space but limit it (for smaller devices)*/
+  max-width: 30%;
+  width: 15vw;
+}
+
+.logo a {
+  max-height: 7vh;
+}
+
+.logo .logong {
+  width: 15vw;
+  max-height: 4.66667vh;
+}
+
+@media (max-width: 992px) {
+  header {
+    /* Leave Header on top on smaller devices */
+    position: absolute;
+  }
+  .logo {
+    width: auto;
+  }
+}</pre>
+        </div>
+        <h2>Navigation</h2>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!-- Navigation START--&gt;
+&lt;nav&gt;
+  &lt;!-- Menu Icon--&gt;&lt;a id="menu-icon" class="fa fa-bars fa-3x"&gt;&lt;/a&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a href="ausbildung.html" class="invisiblelink nav_active"&gt;Home&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="dummy.html" class="invisiblelink"&gt;Über uns&lt;/a&gt;
+      &lt;ul class="submenu"&gt;
+        &lt;li&gt; &lt;a href="dummy.html" class="invisiblelink"&gt;Azubis&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="dummy.html" class="invisiblelink"&gt;Karriere&lt;/a&gt;
+      &lt;ul class="submenu"&gt;
+        &lt;li&gt;
+          &lt;a href="k_ausbildung.html" class="invisiblelink"&gt;Ausbildung&lt;/a&gt;
+          &lt;ul class="submenu"&gt;
+            &lt;li&gt;
+              &lt;a href="k_ausbildung.html" class="invisiblelink"&gt;Kaufmann/frau&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="dummy.html" class="invisiblelink"&gt;Studium&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="dummy.html" class="invisiblelink"&gt;Praktika&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="k_bewerbung.html" class="invisiblelink"&gt;Bewerbung&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="dummy.html" class="invisiblelink"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+          <pre class="brush: css">nav {
+  /*width: 60vw;*/
+  height: 100%;
+  min-height: 3.2rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* Another Font */
+  font-family: "Open Sans", sans-serif;
+}
+
+nav li {
+  display: block;
+  min-width: 10vw;
+  height: 100%;
+  min-height: 3.2rem;
+  border: none;
+  -webkit-transition: border 0.2s;
+          transition: border 0.2s;
+}
+
+nav li a:hover {
+  border-bottom: 5px solid #83afbb;
+  -webkit-transition: border 0.2s;
+          transition: border 0.2s;
+}
+
+nav a {
+  width: 100%;
+  min-height: 3.2rem;
+  padding: -webkit-calc(3.5vh - 1em) 0;
+  padding: calc(3.5vh - 1em) 0;
+  vertical-align: center;
+  display: block;
+  color: #666;
+  height: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;
+  height: 100%;
+  min-height: 3.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Class for active Navitem */
+.nav_active {
+  border-bottom: 5px solid #3b8194;
+  color: #3b8194;
+  font-weight: 400;
+}
+
+.submenu {
+  display: none;
+  margin: 0;
+}
+
+.submenu a {
+  text-align: center;
+  width: 100%;
+  padding: -webkit-calc(3.5vh - 1em) 0 0 0;
+  padding: calc(3.5vh - 1em) 0 0 0;
+  margin: 0;
+  display: block;
+  background: #fff;
+}
+
+.submenu ~ a {
+  display: block;
+}
+
+li:hover &gt; .submenu {
+  display: block;
+  background: #fff;
+}
+
+li:hover &gt; .submenu &gt; li .submenu {
+  position: relative;
+  left: 100%;
+  top: -100%;
+}
+
+#menu-icon {
+  display: none;
+  height: 1em;
+  max-height: 7vh;
+  width: 1em;
+  margin: -webkit-calc((7vh - 1em) * 0.5);
+  margin: calc((7vh - 1em) * 0.5);
+  cursor: pointer;
+  color: #666;
+}
+
+@media (max-width: 992px) {
+  #menu-icon {
+    margin: -webkit-calc((3.2rem - 1em) * 0.5);
+    margin: calc((3.2rem - 1em) * 0.5);
+    display: inline-block;
+  }
+  nav {
+    display: block;
+    width: 10vw;
+  }
+  nav ul {
+    display: none;
+  }
+  nav:hover ul {
+    left: 30%;
+    width: auto;
+    display: block;
+    background: #fff;
+    text-align: left;
+    height: auto;
+    padding: 0 0 0 3vw;
+  }
+  nav:hover ul:hover ul {
+    background: #fff;
+  }
+  nav:hover ul a:hover {
+    color: #83afbb;
+    background: #ebf2f4;
+  }
+  nav:hover &gt; ul {
+    position: absolute;
+    padding: 0 3vw;
+    min-width: 33vw;
+    border: none;
+  }
+  nav:hover &gt; ul &gt; li a {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  nav:hover li:hover {
+    border: none;
+    color: #83afbb;
+  }
+  nav:hover li:hover &gt; .submenu &gt; li .submenu {
+    position: static;
+  }
+  nav:hover a {
+    height: auto;
+    padding-bottom: 0;
+    padding-left: 3vw;
+  }
+  .nav_active {
+    border: none;
+    font-weight: 600;
+  }
+  .submenu {
+    display: block;
+    position: static;
+  }
+  .submenu a {
+    text-align: left;
+  }
+}
+</pre>
+        </div>
+      </section>
+      <section id="g-3">
+        <h1 class="sectionheading">Slider</h1>
+        <div class="examplebox"></div>
+        <div class="codebox">
+          <pre class="brush: xml">&lt;!-- Slider START--&gt;
+&lt;div id="js_progress_trigger" class="slider"&gt;
+  &lt;ul id="js_slider0"&gt;
+    &lt;li style="background: url(stock5_1920.jpg);background-size: cover;" class="slider_sliderimg"&gt;&lt;/li&gt;
+    &lt;li style="background: url(stock8_1920.jpg);background-size: cover;" class="slider_sliderimg"&gt;&lt;/li&gt;
+    &lt;li style="background: url(stock7_1920.jpg);background-size: cover;" class="slider_sliderimg"&gt;&lt;/li&gt;
+    &lt;li style="background: url(stock9_1920.jpg);background-size: cover;" class="slider_sliderimg"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- Slider END--&gt;
+&lt;script&gt;$(document).ready(function(){$('#js_slider0').bxSlider({auto: true});});&lt;/script&gt;</pre>
+        </div>
+        <div class="codebox">
+          <pre class="brush: css">/* Native Slider bx */
+</pre>
+        </div>
+      </section>
+      <section id="g-4">
+        <h1 class="sectionheading">Main</h1>
+        <div class="examplebox"></div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!-- Header END--&gt;
+&lt;div id="js_trigger_header" class="content"&gt;
+  &lt;div class="sidebar"&gt;&lt;/div&gt;
+  &lt;div class="maincol"&gt;
+    &lt;!-- Content --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Footer START--&gt;</pre>
+          <pre class="brush: css">.content {
+  margin: 5rem 0 0 0;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.maincol {
+  position: relative;
+  width: 68vw;
+  margin: 0;
+  padding: 0 5vw 0 10vw;
+}
+
+.maincol img {
+  width: 100%;
+}
+</pre>
+        </div>
+      </section>
+      <section id="g-5">
+        <h1 class="sectionheading">Aside</h1>
+        <div class="examplebox">
+          <div class="sidebar">
+            <div id="nav_gbinitaly" class="sb_news">
+              <div class="sb_news-image"><img src="http://placehold.it/500x350"></div>
+              <h2 class="sb_news-heading sb_small">Groz-Beckert in Italien</h2>
+              <p class="sb_news-p-short sb_news-display">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+              <p class="sb_news-p-long"></p>
+              <div class="button js_news-more"><a>Mehr</a></div>
+              <div class="sb_close button">Close</div>
+            </div>
+            <div id="nav_siebenBerge" class="sb_news">
+              <div class="sb_news-image"><img src="http://placehold.it/500x350"></div>
+              <h2 class="sb_news-heading sb_small">Hinter den sieben Bergen</h2>
+              <p class="sb_news-p-short sb_news-display">Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+              <p class="sb_news-p-long"></p>
+              <div class="button js_news-more"><a>Mehr</a></div>
+              <div class="sb_close button">Close</div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;div class="sidebar"&gt;
+  &lt;!-- News START--&gt;
+  &lt;div id="nav_gbinitaly" class="sb_news"&gt;
+    &lt;!-- Close Button--&gt;
+    &lt;div class="sb_close fa fa-close fa-2x"&gt;&lt;/div&gt;
+    &lt;!-- Image--&gt;
+    &lt;div class="sb_news-image"&gt;&lt;img src="assets/img/500px/italy_500.jpg" alt="News"&gt;&lt;/div&gt;
+    &lt;!-- Big heading--&gt;
+    &lt;h2 class="sb_news-heading sb_small"&gt;Groz-Beckert in Italien&lt;/h2&gt;
+    &lt;!-- Short text--&gt;
+    &lt;p class="sb_news-p-short sb_news-display"&gt;...&lt;/p&gt;
+    &lt;!-- Long text--&gt;
+    &lt;p class="sb_news-p-long"&gt;...&lt;/p&gt;
+    &lt;!-- More Button--&gt;
+    &lt;div class="button js_news-more"&gt;&lt;a&gt;Mehr&lt;/a&gt;&lt;/div&gt;
+    &lt;!-- Close Button--&gt;
+    &lt;div class="sb_close button"&gt;Close&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- News END--&gt;
+  &lt;!-- News START--&gt;
+  &lt;div id="nav_siebenBerge" class="sb_news"&gt;
+    &lt;div class="sb_close fa fa-close fa-2x"&gt;&lt;/div&gt;
+    &lt;div class="sb_news-image"&gt;&lt;img src="assets/img/500px/mountain_500.jpg" alt="News"&gt;&lt;/div&gt;
+    &lt;h2 class="sb_news-heading sb_small"&gt;Hinter den sieben Bergen&lt;/h2&gt;
+    &lt;p class="sb_news-p-short sb_news-display"&gt;...&lt;/p&gt;
+    &lt;p class="sb_news-p-long"&gt;...&lt;/p&gt;
+    &lt;div class="button js_news-more"&gt;&lt;a&gt;Mehr&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="sb_close button"&gt;Close&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- News END--&gt;
+  &lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          <pre class="brush: css">.sidebar {
+  position: absolute;
+  right: 0;
+  width: 30vw;
+  margin: 0;
+  padding: 0;
+  z-index: 50;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.sidebar-big {
+  width: 80vw;
+  background: #fff;
+  box-shadow: 0 0.4rem 1rem rgba(20, 20, 20, 0.5);
+}
+
+@media (max-width: 1020px) {
+  .maincol {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 5vw 0 10vw;
+  }
+  .sidebar-big {
+    width: 100%;
+  }
+  .sidebar {
+    position: static;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+  }
+}
+.sb_close {
+  margin: 0 auto;
+  display: none;
+  text-align: center;
+  width: 9rem;
+  cursor: pointer;
+}
+
+.sb_close:hover {
+  color: #15B0BD;
+}
+
+.sb_close.fa {
+  margin: 0 0;
+  text-align: left;
+}
+
+/* News-item */
+.sb_news {
+  width: 80%;
+  margin: 3vh 10%;
+  padding: 0;
+}
+
+.sb_news &gt; button {
+  border-color: #004f23;
+}
+
+.sb_news &gt; button &gt; a {
+  color: #004f23;
+}
+
+.js_news-more {
+  border-color: #004f23;
+}
+
+.js_news-more a {
+  color: #004f23;
+}
+
+/* News image */
+.sb_news-image {
+  width: 50%;
+  height: auto;
+  float: left;
+  border-radius: 3vh;
+  padding: 3%;
+}
+
+.sb_news-image img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.sb_news-heading {
+  width: 45%;
+  float: right;
+}
+
+/* Class if small */
+.sb_small {
+  font-size: 1.6em;
+}
+
+.sb_news-p-short {
+  clear: both;
+  display: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Class if big */
+.sb_news-p-long {
+  clear: right;
+  display: none;
+  padding-left: 5%;
+}
+
+.sb_news-display {
+  display: block;
+}
+
+.sb_news-display .sb_news-p-short {
+  display: none;
+}
+
+.sb_news-display .sb_news-p-long {
+  display: block;
+}
+
+.sb_news-display .sb_close {
+  display: block;
+}
+
+.sb_news-nodisplay {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  .sidebar-big .sb_news {
+    float: none;
+    width: 80%;
+    margin: 3vh 10%;
+  }
+  .sidebar-big .sb_news-image {
+    width: 50%;
+    float: left;
+  }
+  .sidebar-big .sb_news-heading {
+    width: 45%;
+    float: right;
+  }
+  .sidebar-big .sb_news-p-long {
+    clear: right;
+    padding-left: 5%;
+  }
+  .sb_news {
+    width: 33%;
+    margin: 0;
+    padding: 1%;
+    float: left;
+  }
+  .sb_news-image {
+    width: 100%;
+    min-height: 15vh;
+    float: none;
+    border-radius: 2vh;
+  }
+  .sb_news-heading {
+    width: 100%;
+    float: none;
+  }
+  .sb_small {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-big .sb_news {
+    float: none;
+    width: 80%;
+    margin: 3vh 10%;
+  }
+  .sidebar-big .sb_news-image {
+    width: 100%;
+    float: none;
+  }
+  .sidebar-big .sb_news-heading {
+    width: 100%;
+    float: none;
+  }
+  .sidebar-big .sb_news-p-long {
+    clear: right;
+    padding-left: 5%;
+  }
+}
+</pre>
+        </div>
+      </section>
+      <section id="g-6">
+        <h1 class="sectionheading">Footer</h1>
+        <div class="examplebox">
+          <footer>
+            <div class="footerlogo">
+              <h2 class="logo-training">Groz-Beckert Ausbildung</h2>
+            </div>
+            <div class="footermenu">
+              <ul>
+                <li><a href="" class="invisiblelink">Nach oben</a></li>
+                <li><a href="" class="invisiblelink">Impressum</a></li>
+                <li><a href="" class="invisiblelink">AGBs</a></li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p class="small">Copyright (c) 2015 Groz-Beckert All Rights Reserved</p>
+            </div>
+          </footer>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!-- Footer START--&gt;
+&lt;footer&gt;
+  &lt;!-- Big Logo in Footer--&gt;
+  &lt;div class="footerlogo"&gt;
+    &lt;h2 class="logo-training"&gt;Groz-Beckert Ausbildung&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;!-- Menu in Footer--&gt;
+  &lt;div class="footermenu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#" class="invisiblelink"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="invisiblelink"&gt;Nach oben&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="invisiblelink"&gt;AGBs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;!-- Copyright notice--&gt;
+  &lt;div class="copyright"&gt;
+    &lt;p class="small"&gt;Copyright (c) 2015 Groz-Beckert All Rights Reserved.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+&lt;!-- Footer END--&gt;</pre>
+          <pre class="brush: css">footer {
+  background: #fff;
+}
+
+footer div {
+  /* Create some space for that content*/
+  padding: 2em;
+  text-align: center;
+}
+
+footer .footermenu {
+  font-size: 0.8rem;
+  background: #fff;
+  /* Fill up all that space */
+  width: 100%;
+
+  margin: 0;
+  text-align: center;
+}
+
+footer .footermenu li {
+  display: block;
+
+}
+
+footer .footermenu a {
+  width: 100%;
+  margin: 0;
+  vertical-align: center;
+  display: block;
+  color: #222;
+}
+
+footer .footermenu ul {
+  /* Flexbox for proper alignment */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .copyright {
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  background: #555;
+}
+
+footer .footerlogo h2 {
+  font-size: 3em;
+}
+
+footer .footerlogo img {
+  max-height: 5em;
+}
+
+</pre>
+        </div>
+      </section>
+      <section id="g-7">
+        <h1 class="sectionheading">JavaScript</h1>
+        <div class="examplebox"></div>
+        <div class="codebox">
+          <pre class="brush: xml">&lt;!--Load Script--&gt;
+&lt;script src="assets/js/script.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script&gt;$(document).ready(function(){$('#js_slider0').bxSlider({auto: true});});&lt;/script&gt;</pre>
+        </div>
+        <div class="codebox">
+          <pre class="brush: js">$(function() {
+
+  var pageheight = $('.a-home-page').height() - window.innerHeight - $('header').height();
+
+  pageheight += 'px';
+
+  var controller = new ScrollMagic.Controller();
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: "#js_progress_trigger",
+    triggerHook: 'onLeave',
+    duration: pageheight
+    })
+        .addTo(controller)
+        .on("progress", function (e) {
+          $("#progress").css('width', e.progress*100 + '%');
+        });
+
+
+  $('.js_news-more').click(function(){
+    var $news = $(this).parent();
+    openNews('500', $news);
+  });
+
+  $('.sb_close').click(function(){
+    var $news = $(this).parent();
+    closeNews('500', $news);
+  });
+
+
+
+  function openNews(speed, $news) {
+    $news.siblings().addClass('sb_news-nodisplay');
+    $news.addClass('sb_news-display');
+    $('.sidebar').addClass('sidebar-big');
+    $('.sb_news-heading').removeClass('sb_small');
+    $('.js_news-more').hide(speed);
+
+  }
+
+  function closeNews(speed, $news) {
+    $('.sidebar').removeClass('sidebar-big');
+    setTimeout(function(){ $news.siblings().removeClass('sb_news-nodisplay');}, 500);
+    $news.removeClass('sb_news-display');
+    $('.js_news-more').show();
+    $('.sb_news-heading').addClass('sb_small');
+  }
+
+  // gallery
+  $('.folder img').click(function(){
+    var id = $(this).attr('class');
+    console.log(id);
+    var $toopen = $('#' + id);
+    $('.preview div').not('#' + id).slideUp('500');
+    setTimeout(function(){$toopen.slideDown('500');},500)
+
+
+
+  });
+
+
+  // World Map
+
+  var worldid = '';
+
+  $('.pin').click(function() {
+    worldid = $(this).attr('id');
+    $('.postcard').hide();
+    $('.' + worldid).show('200');
+  });
+
+
+});
+
+</pre>
+        </div>
+      </section>
+      <section id="g-8">
+        <h1 class="sectionheading">Sections</h1>
+      </section>
+      <section id="g-9">
+        <h1 class="sectionheading">Seitenüberschrift</h1>
+        <div class="examplebox">
+          <h1>Demos</h1>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;h1&gt;Demos&lt;/h1&gt;</pre>
+          <pre class="brush: css">.gigantic, .huge, .large, .bigger, .big,
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 100;
+  color: #666;
+}
+.huge, h1 {
+  line-height: 1.05;
+  letter-spacing: -1px;
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin: 3em 0 0;
+  padding: 0.6em 0 0.3em 0;
+  border-top: 1px solid #ddd;
+}</pre>
+        </div>
+      </section>
+      <section id="g-10">
+        <h1 class="sectionheading">Standartüberschrift</h1>
+        <div class="examplebox">
+          <div class="heading">
+            <h2>Produkte</h2>
+          </div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!--Heading START--&gt;
+&lt;section class="heading"&gt;
+  &lt;h2&gt;Produkte&lt;/h2&gt;
+&lt;/section&gt;
+&lt;!--Heading END--&gt;</pre>
+          <pre class="brush: css">.large, h2 {
+  line-height: 1.14;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1em 0 0.3em 0;
+  padding: 0;
+}</pre>
+        </div>
+      </section>
+      <section id="g-11">
+        <h1 class="sectionheading">Megaüberschrift</h1>
+        <div class="examplebox">
+          <h2 class="gigantic">Ausbildung bei<br>Groz-Beckert</h2>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;h2 class="gigantic"&gt;Ausbildung bei Groz-Beckert&lt;/h2&gt;</pre>
+          <pre class="brush: css">.gigantic {
+  font-size: 5rem;
+  line-height: 1.09;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  text-align: center
+}</pre>
+        </div>
+      </section>
+      <section id="g-12">
+        <h1 class="sectionheading">Icons</h1>
+        <p>-&gt; Look Live</p>
+      </section>
+      <section id="g-13">
+        <h1 class="sectionheading">Text und Titel</h1>
+        <div class="examplebox">
+          <div class="text_title">
+            <h2>Juniorakademie</h2>
+            <p>In den Herbstferien vom 02.11.2015 – 06.11.2015 fand zum zwölften Mal die Juniorakademie statt. Hierbei handelt es sich um ein Projekt, bei dem sich Schüler der 8. Jahrgangsstufe eine Woche im technischen Bereich sieben verschiedener Unternehmen umschauen und Erfahrungen sammeln können. Ermöglicht wird das Ganze vom Regierungspräsidium Tübingen und der Firma Groz-Beckert. Die teilnehmenden Firmen waren Groz-Beckert, Assa Abloy, Bizerba, Gühring, Steinmeyer, Krug und Priester sowie der Zollern-Alb-Kurier. Letzterer berichtete die ganze Woche über die Juniorakademie und führte Interviews mit Schülern und Auszubildenden. Des Weiteren hatten alle Schüler ein Projekt, das am Freitag im Auditorium der Groz-Beckert KG vor den teilnehmenden Firmen und den Eltern präsentiert wurde.</p>
+          </div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;section class="text_title"&gt;
+  &lt;h2&gt;Titel&lt;/h2&gt;
+  &lt;p&gt;Text ...&lt;/p&gt;
+&lt;/section&gt;</pre>
+          <pre class="brush: css">/* standart */</pre>
+        </div>
+      </section>
+      <section id="g-14">
+        <h1 class="sectionheading">Text und Bild</h1>
+        <div class="examplebox">
+          <div class="text_img_l">
+            <div class="img"><img src="http://placehold.it/500x350">
+              <p class="small_img_cap">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!-- Text and Image Left START--&gt;
+&lt;section class="text_img_l"&gt;
+  &lt;div class="img"&gt;
+    &lt;img src="assets/img/500px/stock5_500.jpg"&gt;
+    &lt;p class="small_img_cap"&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt; ... &lt;/p&gt;
+&lt;/section&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;!-- Text and Image Left END--&gt;</pre>
+          <pre class="brush: css">.text_img_l .img, .text_img_r .img {
+  width: 50%;
+  padding: 5px;
+}
+
+.text_img_l p, .text_img_r p {
+  width: 48%;
+}
+
+.text_img_l .small_img_cap, .text_img_r .small_img_cap {
+  float: none;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.text_img_l .img {
+  float: left;
+}
+
+.text_img_l p {
+  float: right;
+}
+
+.text_img_r .img {
+  float: right;
+}
+
+.text_img_r p {
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .text_img_l .img, .text_img_r .img {
+    width: 100%;
+    padding: 5px;
+  }
+  .text_img_l p, .text_img_r p {
+    width: 100%;
+  }
+}</pre>
+        </div>
+      </section>
+      <section id="g-15">
+        <h1 class="sectionheading">Bilder</h1>
+        <div class="examplebox">
+          <div class="img_single"><img src="http://placehold.it/1200x600" class="img-full-col"></div>
+          <div class="img_three">
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-half"></div>
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-quarter"></div>
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-quarter"></div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="img_four">
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-quarter"></div>
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-quarter"></div>
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-quarter"></div>
+            <div style="background: url(http://placehold.it/500x350) no-repeat center center;background-size: cover;" class="img-quarter"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!-- Single Image START--&gt;
+&lt;section class="img_single"&gt;
+  &lt;img src="img.jpg" class="img-full-col"&gt;
+&lt;/section&gt;
+&lt;!-- Single Image END--&gt;
+
+&lt;!-- Three Images START--&gt;
+&lt;section class="img_three"&gt;
+  &lt;div style="background: url(img.jpg)" class="img-half"&gt;&lt;/div&gt;
+  &lt;div style="background: url(img.jpg)" class="img-quarter"&gt;&lt;/div&gt;
+  &lt;div style="background: url(img.jpg)" class="img-quarter"&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;!-- Three Images END--&gt;
+
+&lt;!-- Four Images START--&gt;
+&lt;section class="img_four"&gt;
+  &lt;div style="background: url(img.jpg)" class="img-quarter"&gt;&lt;/div&gt;
+  &lt;div style="background: url(img.jpg)" class="img-quarter"&gt;&lt;/div&gt;
+  &lt;div style="background: url(img.jpg)" class="img-quarter"&gt;&lt;/div&gt;
+  &lt;div style="background: url(img.jpg)" class="img-quarter"&gt;&lt;/div&gt;
+&lt;/section&gt;
+&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;!-- Four Images END--&gt;</pre>
+          <pre class="brush: css">.img-full, .img-half, .img-quarter {
+  margin: 0;
+  padding: 0;
+  border: 0.3vh solid #fff;
+  background-size: cover;
+}
+
+.img-full {
+  width: 100%;
+}
+
+.img-half {
+  float: left;
+  width: 50%;
+  height: 60vh;
+}
+
+.img-quarter {
+  float: left;
+  width: 50%;
+  height: 30vh;
+}
+
+@media (max-width: 768px) {
+  .img-half {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-quarter {
+    width: 100%;
+  }
+}</pre>
+        </div>
+      </section>
+      <section id="g-16">
+        <h1 class="sectionheading">Postkarte</h1>
+        <div class="examplebox">
+          <div class="postcard worldcz">
+            <div class="postcard_content">
+              <div class="rightcol"><img src="http://placehold.it/300x200">
+                <p class="adress handwritten">Deborah Lang</p>
+                <p class="adress handwritten">Tschechien Budweis</p>
+                <p class="adress handwritten">28.6.15 - 31.7.15</p>
+                <p class="adress handwritten">DH-Studentin BWL-Industrie</p>
+              </div>
+              <div class="leftcol">
+                <h3>Aufgabenbereich: &lt;span class="handwritten"&gt;Arbeitsvorbereitung &lt;br&gt; Aufnahme und Optimierung von Arbeitsprozessen&lt;/span&gt;&lt;/h3&gt;</h3>
+                <p class="writing handwritten">Budweis liegt in Südböhmen, das ist der Grund, weshalb es dort sehr viel zu sehen gibt. An den Wochenenden habe ich die Altstadt Krumlov (liegt direkt am Fluss, in dem man auch Kanu fahren kann), das Märchenschloss in Hluboka, die Stadt Lipno (dort gibt es einen großen Aussichtsturm und einen Stausee zum Baden) und die Stadt Holasovice (die dortigen Bauernhäuser zählen zum UNESCO Weltkulturerbe)besucht. Zusätzlich war ich zusammen mit zwei weiteren Azubis ein Wochenende in Prag.</p>
+                <p class="writing handwritten">Es ist sehr interessant zu sehen, wie in einem fremden Land Dinge gemacht werden. &lt;br&gt; Man lernt zudem selbständiger Aufgaben zu erledigen.</p>
+                <p class="question">Würdest du nochmal in das Ausland gehen?</p>
+                <p class="writing handwritten">Ja, da es eine sehr gute Erfahrung ist und man ein neues Land/ eine andere Kultur kennenlernen kann</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;section class="postcard worldcz"&gt;
+  &lt;div class="postcard_content"&gt;
+    &lt;div class="rightcol"&gt;&lt;img src="assets/img/300px/stock11_300.jpg"&gt;
+      &lt;p class="adress handwritten"&gt;...&lt;/p&gt;
+      &lt;p class="adress handwritten"&gt;...&lt;/p&gt;
+      &lt;p class="adress handwritten"&gt;...&lt;/p&gt;
+      &lt;p class="adress handwritten"&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="leftcol"&gt;
+      &lt;h3&gt;...&lt;span class="handwritten"&gt;...&lt;/span&gt;&lt;/h3&gt;
+      &lt;p class="writing handwritten"&gt;...&lt;/p&gt;
+      &lt;p class="writing handwritten"&gt;..&lt;/p&gt;
+      &lt;p class="question"&gt;Würdest du nochmal in das Ausland gehen?&lt;/p&gt;
+      &lt;p class="writing handwritten"&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="clearfix"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+          <pre class="brush: css"></pre>
+        </div>
+      </section>
+      <section id="g-17">
+        <h1 class="sectionheading">Ausbilder</h1>
+        <div class="examplebox">
+          <div class="trainer">
+            <div class="imgcontainer">
+              <div class="tritem"><img src="http://placehold.it/300x400">
+                <h3>Ralf Edelmann</h3>
+                <div class="overlay">
+                  <h3>Drehen, Schleifen, Juniorfirma</h3>
+                  <blockquote class="handwritten">
+                    <p>In dir muss brennen, was du in anderen entzünden willst!</p>
+                    <p>Augustinus</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!--Trainer START--&gt;
+&lt;section class="trainer"&gt;
+  &lt;div class="imgcontainer"&gt;
+    &lt;div class="tritem"&gt;&lt;img src="images/ausbilder_freigestellt/edelmann.png"&gt;
+      &lt;h3&gt;Ralf Edelmann&lt;/h3&gt;
+      &lt;div class="overlay"&gt;
+        &lt;h3&gt;Drehen, Schleifen, Juniorfirma&lt;/h3&gt;
+        &lt;blockquote class="handwritten"&gt;
+          &lt;p&gt;In dir muss brennen, was du in anderen entzünden willst!&lt;/p&gt;
+          &lt;p&gt;Augustinus&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!--Trainer END--&gt;</pre>
+          <pre class="brush: css">.trainer .imgcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.trainer .imgcontainer .tritem {
+  width: 20%;
+  min-width: 130px;
+  position: relative;
+  height: 100%;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+.trainer .imgcontainer .tritem img {
+  border-bottom: 0.5em solid #004f23;
+  height: 80%;
+  width: 100%;
+  margin: 0 0 -1em;
+  padding: 0;
+}
+
+.trainer .overlay {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(90, 90, 90, 0.8);
+  color: #fff;
+  padding: 5% 5% 0 5%;
+  text-align: center;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+  z-index: 20;
+}
+
+.trainer .overlay:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+  z-index: 20;
+}
+
+.trainer .overlay h3 {
+  color: #fff;
+  text-align: center;
+}
+
+.trainer h3 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+}
+
+.trainer blockquote {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: left;
+  max-height: 60%;
+}
+
+.trainer blockquote p {
+  margin: 0.4em 0 0 0;
+  padding: 0;
+}
+
+blockquote {
+  display: block;
+  padding: 0 0 0 2.5em;
+  margin: 0;
+  position: relative;
+}
+
+blockquote::before {
+  content: "\201C";
+  position: absolute;
+  font-family: Georgia, serif;
+  line-height: 1.2;
+  font-size: 4rem;
+  left: 0.1em;
+  top: 0;
+}
+
+blockquote::after {
+  content: "";
+}</pre>
+        </div>
+      </section>
+      <section id="g-18">
+        <h1 class="sectionheading">Kontakt</h1>
+        <div class="examplebox">
+          <div class="contact">
+            <div class="person"><img src="http://placehold.it/300x300">
+              <h3>Nicolai Wiedmann</h3>
+              <h4>Leiter Aus- und Weiterbildung</h4>
+              <p>Groz-Beckert KG&lt;br&gt;  Herrn Nicolai Wiedmann&lt;br&gt;  Parkweg 2&lt;br&gt;  72458 Albstadt</p>
+              <ul class="unstyled pearlstring">
+                <li><a href="mailto:" class="fa fa-envelope"></a></li>
+                <li><a href="tel:+497431102461" class="fa fa-phone"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;section class="contact"&gt;
+  &lt;div class="person"&gt;
+    &lt;img src="assets/img/300px/stock5_300.jpg"&gt;
+    &lt;h3&gt;Nicolai Wiedmann &lt;/h3&gt;
+    &lt;h4&gt;Leiter Aus- und Weiterbildung&lt;/h4&gt;
+    &lt;p&gt;...&lt;br&gt;...&lt;br&gt;...&lt;/p&gt;
+    &lt;ul class="unstyled pearlstring"&gt;
+      &lt;li&gt;
+        &lt;a href="" class="fa fa-envelope"&gt;&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href="tel:0123" class="fa fa-phone"&gt;&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+          <pre class="brush: css">.contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.person {
+  border-radius: 3em;
+  width: 20rem;
+  padding: 1em;
+  text-align: center;
+}
+
+.person img {
+  width: 13rem;
+  height: 13rem;
+  padding: 0.2em;
+  background: #666;
+  border-radius: 50%;
+}
+
+.pearlstring {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2em;
+  height: 4em;
+}
+
+.pearlstring li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  background: #fff;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 0.2em solid #666;
+  margin: 0.2em 0.5em 0.2em;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pearlstring li a {
+  font-size: 2em;
+}
+
+.pearlstring li:hover {
+  font-size: 1.2em;
+  margin: 0 0.15em 0;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+  border-width: 0.1em;
+}
+
+.pearlstring::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1.625rem;
+  left: 10%;
+  height: 0.3em;
+  border-radius: 0.15em;
+  background: #666;
+  width: 80%;
+  z-index: 5;
+}</pre>
+        </div>
+      </section>
+      <section id="g-19">
+        <h1 class="sectionheading">Produkte</h1>
+        <div class="examplebox">
+          <div class="products-grid">
+            <div class="products-row">
+              <div class="product"><img src="http://placehold.it/250x200">
+                <div class="p-content">
+                  <h2>Wäscheklammer</h2>
+                  <h3>50€</h3>
+                  <p>Mit dieser Wäschklammer können sie ihre Wäsche zum Trocknen aufhängen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;!-- Products START--&gt;
+&lt;section class="products-grid"&gt;
+  &lt;div class="products-row"&gt;
+    &lt;div class="product"&gt;&lt;img src="img.jpg"&gt;
+      &lt;div class="p-content"&gt;
+        &lt;h2&gt;Wäscheklammer&lt;/h2&gt;
+        &lt;h3&gt;50€&lt;/h3&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- Products END--&gt;</pre>
+          <pre class="brush: css">.products-grid {
+  width: 100%;
+}
+
+.products-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+}
+
+.product {
+  position: relative;
+  width: -webkit-calc(50% - 1em);
+  width: calc(50% - 1em);
+  box-shadow: 0 0 0.5em rgba(60, 60, 60, 0.3);
+  margin: 1em 0.5em;
+  height: 15rem;
+  min-height: 14em;
+}
+
+.product img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  z-index: -1;
+}
+
+.product .p-content {
+  position: absolute;
+  padding-left: 1em;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+}
+
+.product .button,
+.product p {
+  clear: both;
+}
+
+.product .button {
+  margin-top: 2em;
+  display: block;
+  width: 40%;
+}
+
+@media (max-width: 1400px) {
+  .product {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    height: -webkit-calc(12em + (100vw * 0.5));
+    height: calc(12em + (100vw * 0.5));
+    width: -webkit-calc(100vw - 1em);
+    width: calc(100vw - 1em);
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  .product .p-content {
+    width: 100%;
+    top: -webkit-calc(100vw * 0.5);
+    top: calc(100vw * 0.5);
+    left: 0;
+    right: auto;
+    height: 12em;
+  }
+}</pre>
+        </div>
+      </section>
+      <section id="g-20">
+        <h1 class="sectionheading">Accordion</h1>
+        <div class="examplebox">
+          <div class="accordion">
+            <ul>
+              <li>
+                <input type="checkbox" checked><i></i>
+                <h3>Tab 1</h3>
+                <div class="ac_content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" checked><i></i>
+                <h3>Tab 2</h3>
+                <div class="ac_content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" checked><i></i>
+                <h3>Tab 3</h3>
+                <div class="ac_content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="codebox split2">
+          <pre class="brush: xml">&lt;div class="accordion"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;input type="checkbox" checked&gt;&lt;i&gt;&lt;/i&gt;
+      &lt;h3&gt;Tab 1&lt;/h3&gt;
+      &lt;div class="ac_content"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="checkbox" checked&gt;&lt;i&gt;&lt;/i&gt;
+      &lt;h3&gt;Tab 2&lt;/h3&gt;
+      &lt;div class="ac_content"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type="checkbox" checked&gt;&lt;i&gt;&lt;/i&gt;
+      &lt;h3&gt;Tab 3&lt;/h3&gt;
+      &lt;div class="ac_content"&gt;
+        &lt;p&gt;...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+          <pre class="brush: css">.accordion .transition, .accordion .ac_content, .accordion ul li i:before, .accordion ul li i:after {
+  -webkit-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+}
+
+.accordion h3 {
+  display: block;
+  border-bottom: 1px solid #c2c2c2;
+  margin: 0;
+  padding: 1.3em 0.6em 0.7em;
+  cursor: pointer;
+}
+
+.accordion .ac_content {
+  position: relative;
+  overflow: hidden;
+  margin: 1em 1em 0 1em;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  z-index: 2;
+}
+
+.accordion .ac_content ul {
+  list-style: circle inside;
+  border: none;
+  margin: 1em;
+}
+
+.accordion .ac_content li {
+  border: none;
+}
+
+.accordion ul {
+  list-style: none;
+  -webkit-perspective: 900;
+          perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #636363;
+  border-left: 0.5em solid #636363;
+  border-right: 1px solid #636363;
+}
+
+.accordion ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+.accordion ul li i {
+  position: absolute;
+  -webkit-transform: translate(-6px, 0);
+      -ms-transform: translate(-6px, 0);
+          transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+
+.accordion ul li i:before, .accordion ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #666;
+  width: 0.2em;
+  height: 0.6em;
+  margin-left: -2em;
+}
+
+.accordion ul li i:before {
+  -webkit-transform: translate(-2px, 0) rotate(45deg);
+      -ms-transform: translate(-2px, 0) rotate(45deg);
+          transform: translate(-2px, 0) rotate(45deg);
+}
+
+.accordion ul li i:after {
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+      -ms-transform: translate(2px, 0) rotate(-45deg);
+          transform: translate(2px, 0) rotate(-45deg);
+}
+
+.accordion ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+
+.accordion ul li input[type=checkbox]:checked ~ .ac_content {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.accordion ul li input[type=checkbox]:checked ~ i:before {
+  -webkit-transform: translate(2px, 0) rotate(45deg);
+      -ms-transform: translate(2px, 0) rotate(45deg);
+          transform: translate(2px, 0) rotate(45deg);
+}
+
+.accordion ul li input[type=checkbox]:checked ~ i:after {
+  -webkit-transform: translate(-2px, 0) rotate(-45deg);
+      -ms-transform: translate(-2px, 0) rotate(-45deg);
+          transform: translate(-2px, 0) rotate(-45deg);
+}</pre>
+        </div>
+      </section>
+      <section>
+        <h1>Auf diesen Seiten:</h1>
+        <h2>Zeichen:  260.448</h2>
+        <h2>Zeilen: 8742</h2>
+        <h2>Das sind 144,7 A4-Seiten ohne Formatierung</h2>
+        <h2>Oder 291,5 A4-Seiten mit Formatierung</h2>
+      </section>
+    </div>
+  </div>
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/highlighter/shCore.js"></script>
+  <script src="assets/js/highlighter/shAutoloader.js"></script>
+  <script src="assets/js/highlighter/shLegacy.js"></script>
+  <script src="assets/js/highlighter/shBrushCss.js"></script>
+  <script src="assets/js/highlighter/shBrushXml.js"></script>
+  <script src="assets/js/highlighter/shBrushJScript.js"></script>
+  <script src="assets/js/ScrollMagic.min.js"></script>
+  <script src="assets/js/TweenMax.min.js"></script>
+  <script src="assets/js/TimelineMax.min.js"></script>
+  <script src="assets/js/plugins/animation.gsap.min.js"></script>
+  <script src="assets/js/easing/EasePack.min.js"></script>
+  <script src="assets/js/plugins/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/plugins/TextPlugin.min.js"></script>
+  <script src="assets/js/plugins/debug.addIndicators.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+  <script src="assets/js/examples.js"></script>
+  <script src="assets/js/jquerymagic.js"></script>
+  <script>
+    SyntaxHighlighter.defaults['gutter'] = true;
+    SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.defaults['ruler'] = false;
+    SyntaxHighlighter.defaults['html-style']= true;
+    SyntaxHighlighter.all();
+  </script>
+</body>

@@ -4,7 +4,7 @@ $(function(){
 
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
-    // duration: $('section').height(),
+    duration: $('section').height(),
     triggerHook: .05,
     reverse: true
   }

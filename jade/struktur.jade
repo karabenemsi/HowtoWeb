@@ -52,12 +52,132 @@ body
                     a.big(href="azubisite/sitenocss.html" target="_blank") Showsite No CSS
                     a.big(href="site_grob.html") Erklärung
                     .clearfix
-                section#g-3
+                section#g-3 
                   h1.sectionheading Schreibstil
-                  
-                  
+                  h2 HTML: IDs und Klassen
+                  .codebox
+                    pre(class="brush: xml").
+                      &lt;div class="maincol"&gt;
+                      
+                      &lt;p class="sb_news-p-short sb_news-display"&gt;
+                      
+                      &lt;div class="button js_news-more"&gt;
+                      
+                      &lt;div id="nav_siebenBerge" class="sb_news"&gt;
+                      
+                      &lt;div id="js_progress_trigger" class="slider"&gt;
+                  h2 CSS
+                  .codebox
+                    pre(class="brush: css").
+                      /* Viele rem und em */
+                      h1{ font-size: 3rem; }
+                        
+                  h2 JavaScript
+                  .codebox
+                    pre(class="brush: js").
                 section#g-4
                   h1.sectionheading Dateiordnung
+                  h2 Voller Baum
+                  pre. 
+                    | -- assets/ 
+                    |   | -- css/ 
+                    |   |   | -- 1-tools/ 
+                    |   |   |   | -- fonts.scss 
+                    |   |   |   | -- normalize.sass 
+                    |   |   |   | -- vars.sass 
+                    |   |   |   | -- urls.sass 
+                    |   |   |   | -- font-awesome.min.scss 
+                    |   |   | -- 2-basics/ 
+                    |   |   |   | -- body-elements.sass 
+                    |   |   |   | -- links.sass 
+                    |   |   |   | -- selection-colors.sass 
+                    |   |   |   | -- typography.sass 
+                    |   |   |   | -- basics.sass 
+                    |   |   |   | -- buttons.sass 
+                    |   |   |   | -- scrollbar.sass 
+                    |   |   | -- 3-modules/ 
+                    |   |   |   | -- contentgrid.sass 
+                    |   |   |   | -- footer.sass 
+                    |   |   |   | -- grid.sass 
+                    |   |   |   | -- header.sass 
+                    |   |   |   | -- navigation.sass 
+                    |   |   |   | -- slider.sass 
+                    |   |   | -- 4-pages/ 
+                    |   |   |   | -- page-landing.sass 
+                    |   |   |   | -- page-ausbildung.sass 
+                    |   |   | -- 5-sections/ 
+                    |   |   |   | -- accordion.sass 
+                    |   |   |   | -- contact.sass 
+                    |   |   |   | -- galery.sass 
+                    |   |   |   | -- images.sass 
+                    |   |   |   | -- masonry.sass 
+                    |   |   |   | -- piechart.sass 
+                    |   |   |   | -- postcard.sass 
+                    |   |   |   | -- products.sass 
+                    |   |   |   | -- sections.sass 
+                    |   |   |   | -- space.sass 
+                    |   |   |   | -- team.sass 
+                    |   |   |   | -- text-img.sass 
+                    |   |   |   | -- trainer.sass 
+                    |   |   |   | -- worldmap.sass 
+                    |   |   | -- main.sass 
+                    |   |   | -- main.css 
+                    |   |   | -- main.min.css 
+                    |   | -- fonts/ 
+                    |   |   | -- FontAwesome.otf 
+                    |   | -- js/ 
+                    |   |   | -- jquery-2.1.4.min.js 
+                    |   |   | -- functions.js 
+                    |   |   | -- script.js 
+                    |   |   | -- script.min.js 
+                    |   | -- img/ 
+                    |   |   | -- Images 
+                    | -- jade/ 
+                    |   | -- includes/ 
+                    |   |   | -- footer.jade 
+                    |   |   | -- head.jade 
+                    |   |   | -- header.jade 
+                    |   |   | -- script.jade 
+                    |   |   | -- sidebar.jade 
+                    |   |   | -- slider.jade 
+                    |   |   | -- vars.jade 
+                    |   | -- a_ausbilder.jade 
+                    |   | -- ausbildung.jade 
+                    |   | -- demos.jade 
+                    |   | -- dummy.jade 
+                    |   | -- h_ausland.jade 
+                    |   | -- h_wolfach.jade 
+                    |   | -- index.jade 
+                    |   | -- k_ausbildung.jade 
+                    |   | -- k_bewerbung.jade 
+                    |   | -- kontakt.jade 
+                    | -- index.html 
+                    | -- a_ausbilder.html 
+                    | -- ausbildung.html 
+                    | -- demos.html 
+                    | -- dummy.html 
+                    | -- h_ausland.html 
+                    | -- h_wolfach.html 
+                    | -- k_ausbildung.html 
+                    | -- k_bewerbung.html 
+                    | -- kontakt.html 
+                    | -- prepros.cfg             
+                  h2 Ordner
+                  pre 
+                    | -- assets/ 
+                    |   | -- css/ 
+                    |   |   | -- 1-tools 
+                    |   |   | -- 2-basics 
+                    |   |   | -- 3-modules 
+                    |   |   | -- 4-pages 
+                    |   |   | -- 5-sections 
+                    |   | -- fonts/ 
+                    |   | -- img/ 
+                    |   | -- js/ 
+                    | -- jade/ 
+                    | -- 
+                    | -- 
+
                   
                   
     include ./modules/footer.jade
